@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GHC2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/img/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+    <link href="~/css/Mahmoud.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="main-wrapper">
+        <nav style=" background-color: #576574;
+        position: absolute !important;
+        width: 100% !important;
+        z-index: 25 !important;
+" class="navbar navbar-expand-lg navbar-light   topNav unblur">
+            <div class="container" style="margin-left:40%">
+                <h2 class="logo me-auto " style="color: white">G H C</h2>
+            </div>
+            <button class="btn btn-outline-light" id="menu-toggle" style="background-color:#576574;display:none">
+                <div class="container" style="margin-left:40%">
+                    <h2 class="logo me-auto " style="color: white">G H C</h2>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+
+                    <partial name="_LoginPartial" />
+
+                </ul>
+            </div>
+        </nav>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li>
+                                <a href="index-2.html"><i class="fa fa-home back-icon"></i> <span>Back to Home</span></a>
+                            </li>
+                            <li class="menu-title">Chat Groups <a href="#" class="add-user-icon" data-toggle="modal" data-target="#add_group"><i class="fa fa-plus"></i></a></li>
+                    
+                            @*<li>
+                            <a href="chat.html">#General</a>
+                        </li>
+                        <li>
+                            <a href="chat.html">#Video Responsive Survey</a>
+                        </li>
+                        <li>
+                            <a href="chat.html">#500rs</a>
+                        </li>
+                        <li>
+                            <a href="chat.html">#warehouse</a>
+                        </li>
+                        <li class="menu-title">Direct Chats <a href="#" class="add-user-icon" data-toggle="modal" data-target="#add_chat_user"><i class="fa fa-plus"></i></a></li>*@
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @await Component.InvokeAsync("Room")}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="chat-main-row">
+                    <div class="chat-main-wrapper">
+                        <div class="col-lg-12 message-view chat-view">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+                <div id="drag_files" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Drag and drop files upload</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="js-upload-form">
+                                    <div class="upload-drop-zone" id="drop-zone">
+                                        <i class="fa fa-cloud-upload fa-2x"></i> <span class="upload-text">Just drag and drop files here</span>
+                                    </div>
+                                    <h4>Uploading</h4>
+                                    <ul class="upload-list">
+                                        <li class="file-list">
+                                            <div class="upload-wrap">
+                                                <div class="file-name">
+                                                    <i class="fa fa-photo"></i> photo.png
+                                                </div>
+                                                <div class="file-size">1.07 gb</div>
+                                                <button type="button" class="file-close">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                            <div class="progress progress-xs progress-striped">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%"></div>
+                                            </div>
+                                            <div class="upload-process">37% done</div>
+                                        </li>
+                                        <li class="file-list">
+                                            <div class="upload-wrap">
+                                                <div class="file-name">
+                                                    <i class="fa fa-file"></i> task.doc
+                                                </div>
+                                                <div class="file-size">5.8 kb</div>
+                                                <button type="button" class="file-close">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                            <div class="progress progress-xs progress-striped">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%"></div>
+                                            </div>
+                                            <div class="upload-process">37% done</div>
+                                        </li>
+                                        <li class="file-list">
+                                            <div class="upload-wrap">
+                                                <div class="file-name">
+                                                    <i class="fa fa-photo"></i> dashboard.png
+                                                </div>
+                                                <div class="file-size">2.1 mb</div>
+                                                <button type="button" class="file-close">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                            <div class="progress progress-xs progress-striped">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%"></div>
+                                            </div>
+                                            <div class="upload-process">Completed</div>
+                                        </li>
+                                    </ul>
+                                </form>
+                                <div class="m-t-30 text-center">
+                                    <button class="btn btn-primary submit-btn">Add to upload</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="add_group" class="modal fade">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Create a group</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Groups are where your team communicates. They’re best when organized around a topic — #leads, for example.</p>
+                                <form>
+                                    <div class="form-group">
+                                        <label>Group Name <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Send invites to: <span class="text-muted-light">(optional)</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="m-t-50 text-center">
+                                        <button class="btn btn-primary submit-btn">Create Group</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="add_chat_user" class="modal fade " role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Create Chat Group</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group m-b-30">
+                                    <input placeholder="Search to start a chat" class="form-control search-input" id="btn-input" type="text">
+                                    <span class="input-group-append">
+                                        <button class="btn btn-primary">Search</button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h5>Recent Conversations</h5>
+                                    <ul class="chat-user-list">
+                                        <li>
+                                            <a href="#">
+                                                <div class="media">
+                                                    <span class="avatar align-self-center">J</span>
+                                                    <div class="media-body align-self-center text-nowrap">
+                                                        <div class="user-name">Jeffery Lalor</div>
+                                                        <span class="designation">Team Leader</span>
+                                                    </div>
+                                                    <div class="text-nowrap align-self-center">
+                                                        <div class="online-date">1 day ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="media ">
+                                                    <span class="avatar align-self-center">B</span>
+                                                    <div class="media-body align-self-center text-nowrap">
+                                                        <div class="user-name">Bernardo Galaviz</div>
+                                                        <span class="designation">Web Developer</span>
+                                                    </div>
+                                                    <div class="align-self-center text-nowrap">
+                                                        <div class="online-date">3 days ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="media">
+                                                    <span class="avatar align-self-center">
+                                                        <img src="assets/img/user.jpg" alt="John Doe">
+                                                    </span>
+                                                    <div class="media-body text-nowrap align-self-center">
+                                                        <div class="user-name">John Doe</div>
+                                                        <span class="designation">Web Designer</span>
+                                                    </div>
+                                                    <div class="align-self-center text-nowrap">
+                                                        <div class="online-date">7 months ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="m-t-50 text-center">
+                                    <button class="btn btn-primary submit-btn">Create Group</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="share_files" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Share File</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="files-share-list">
+                                    <div class="files-cont">
+                                        <div class="file-type">
+                                            <span class="files-icon"><i class="fa fa-file-pdf-o"></i></span>
+                                        </div>
+                                        <div class="files-info">
+                                            <span class="file-name text-ellipsis">AHA Selfcare Mobile Application Test-Cases.xls</span>
+                                            <span class="file-author"><a href="#">Bernardo Galaviz</a></span> <span class="file-date">May 31st at 6:53 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Share With</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                                <div class="m-t-50 text-center">
+                                    <button class="btn btn-primary submit-btn">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification-box">
+                    <div class="msg-sidebar notifications msg-noti">
+                        <div class="topnav-dropdown-header">
+                            <span>Messages</span>
+                        </div>
+                        <div class="drop-scroll msg-list-scroll" id="msg_list">
+                            <ul class="list-box">
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">R</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Richard Miles </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item new-message">
+                                            <div class="list-left">
+                                                <span class="avatar">J</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">John Doe</span>
+                                                <span class="message-time">1 Aug</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">T</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Tarah Shropshire </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">M</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Mike Litorus</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">C</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Catherine Manseau </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">D</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Domenic Houston </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">B</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Buster Wigton </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">R</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Rolland Webber </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">C</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Claire Mapes </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">M</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Melita Faucher</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">J</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Jeffery Lalor</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">L</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Loren Gatlin</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">T</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Tarah Shropshire</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="chat.html">See all messages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/axios/axios.js"></script>
+    <script src="~/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/jquery.slimscroll.js"></script>
+    <script src="~/assets/js/app.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

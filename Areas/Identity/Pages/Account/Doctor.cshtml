@@ -1,0 +1,303 @@
+﻿@page
+@model GHC2.Areas.Identity.Pages.Account.DoctorModel
+@{ 
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+<style>
+    #imgp {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
+<ul class="nav nav-tabs" style="display:none">
+    <li class="active"><a data-toggle="tab" href="#home">Doctor</a></li>
+    <li><a data-toggle="tab" href="#menu1">Patient 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Admin </a></li>
+
+</ul>
+
+<div class="tab-content">
+    <div id="home" class="tab-pane fade ">
+
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Doctor Registration</h1>
+                    <hr />
+                    
+                    <div class="form-group">
+                        <label asp-for="Input.UserName"></label>
+                        <input asp-for="Input.UserName" class="form-control" />
+                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Password"></label>
+                        <input asp-for="Input.Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword"></label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Speciality"></label>
+                        <input asp-for="Input.Speciality" class="form-control" />
+                        <span asp-validation-for="Input.Speciality" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <hr />
+                    <br />
+                    <div class="form-group" style="display:none">
+                        <label asp-for="Input.Role"></label>
+                        <input asp-for="Input.Role" value="Doctor" class="form-control" />
+                        <span asp-validation-for="Input.Role" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.SNN" style="color:red;"></label>
+                        <input asp-for="Input.SNN" class="form-control" />
+                        <span asp-validation-for="Input.SNN" class="text-danger"></span>
+                    </div>
+                    <div class="form-group " colspan="2">
+                        <label asp-for="Input.Phone"></label>
+                        <input asp-for="Input.Phone" class="form-control" />
+                        <span asp-validation-for="Input.Phone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Email"></label>
+                        <input asp-for="Input.Email" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Degree"></label>
+                        <input asp-for="Input.Degree" class="form-control" />
+                        <span asp-validation-for="Input.Degree" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <hr />
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="Input.ImgUrl"></label>
+                        <input asp-for="Input.ImgUrl" class="form-control" />
+                        <span asp-validation-for="Input.ImgUrl" class="text-danger"></span>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label asp-for="Input.Gender"></label>
+                        <input asp-for="Input.Gender" class="form-control" />
+                        <span asp-validation-for="Input.Gender" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Address"></label>
+                        <input asp-for="Input.Address" class="form-control" />
+                        <span asp-validation-for="Input.Address" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.YearOFGraduation"></label>
+                        <input asp-for="Input.YearOFGraduation" class="form-control" />
+                        <span asp-validation-for="Input.YearOFGraduation" class="text-danger"></span>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="menu1" class="tab-pane fade in active show ">
+        <h1 class="text-center">Patient Registration</h1>
+        <form method="post">
+            <div class="row">
+                <div class="col-md-3">
+                    <hr />
+                    <div class="form-group">
+                        <label asp-for="Input.SNN"></label>
+                        <input asp-for="Input.SNN" class="form-control" />
+                        <span asp-validation-for="Input.SNN" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.UserName"></label>
+                        <input asp-for="Input.UserName" class="form-control" />
+                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Password"></label>
+                        <input asp-for="Input.Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword"></label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+
+                    @*<button type="submit" class="btn btn-block bg-light">Register</button>*@
+                </div>
+                <div class="col-md-3 col-md-offset-2">
+                    <hr />
+                    <div class="form-group" style="display:none">
+                        <label asp-for="Input.Role"></label>
+                        <input asp-for="Input.Role" value="Patient" class="form-control" />
+                        <span asp-validation-for="Input.Role" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group " colspan="2">
+                        <label asp-for="Input.Phone"></label>
+                        <input asp-for="Input.Phone" class="form-control" />
+                        <span asp-validation-for="Input.Phone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Email"></label>
+                        <input asp-for="Input.Email" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>  <div class="form-group" style="display:none">
+                        <label asp-for="Input.Speciality"></label>
+                        <input asp-for="Input.Speciality" class="form-control" value="Patient"/>
+                        <span asp-validation-for="Input.Speciality" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Gender"></label>
+                        <input asp-for="Input.Gender" class="form-control" />
+                        <span asp-validation-for="Input.Gender" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-md-offset-1">
+                    <hr />
+
+                    <div class="form-group">
+                        <label class="form-label" for="customFile">Upload Image</label>
+                        <input type="file" class="form-control" id="customFile" asp-for="Input.ImgUrl" style="height:50PX" />
+                        <span asp-validation-for="Input.ImgUrl" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Input.Address"></label>
+                        <input asp-for="Input.Address" class="form-control" />
+                        <span asp-validation-for="Input.Address" class="text-danger"></span>
+                    </div>   <div class="form-group" style=" display:none">
+                        <label asp-for="Input.Degree"></label>
+                        <input asp-for="Input.Degree" class="form-control" value="Patient" />
+                        <span asp-validation-for="Input.Degree" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" asp-for="Input.BloodGroup"></label>
+                        <select class="form-control"  asp-for="Input.BloodGroup" >
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select>                        <span asp-validation-for="Input.ImgUrl" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <img src="~/nermen/img/Patient2.jpg" id="imgp">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container">
+                    <br />
+                    <button type="submit" class="btn btn-block bg-primary">Register</button>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Admin Registration</h1>
+
+                    <hr />
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Input.SNN"></label>
+                        <input asp-for="Input.SNN" class="form-control" />
+                        <span asp-validation-for="Input.SNN" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Input.UserName"></label>
+                        <input asp-for="Input.UserName" class="form-control" />
+                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Password"></label>
+                        <input asp-for="Input.Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword"></label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <hr />
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="Input.Role"></label>
+                        <input asp-for="Input.Role" value="Admin" class="form-control" />
+                        <span asp-validation-for="Input.Role" class="text-danger"></span>
+                    </div>
+                    <div class="form-group " colspan="2">
+                        <label asp-for="Input.Phone"></label>
+                        <input asp-for="Input.Phone" class="form-control" />
+                        <span asp-validation-for="Input.Phone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Email"></label>
+                        <input asp-for="Input.Email" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <hr />
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="Input.ImgUrl"></label>
+                        <input asp-for="Input.ImgUrl" class="form-control" />
+                        <span asp-validation-for="Input.ImgUrl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Gender"></label>
+                        <input asp-for="Input.Gender" class="form-control" />
+                        <span asp-validation-for="Input.Gender" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Address"></label>
+                        <input asp-for="Input.Address" class="form-control" />
+                        <span asp-validation-for="Input.Address" class="text-danger"></span>
+                    </div>
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@*<form asp-route-returnUrl="@Model.ReturnUrl" method="post">*@
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

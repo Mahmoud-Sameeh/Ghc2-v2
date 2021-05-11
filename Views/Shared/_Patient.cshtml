@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="~/CustomFolder/vendor/jquery/jquery.min.js"></script>
+    <script src="~/CustomFolder/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="~/CustomFolder/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    @*<link href="D:\MyITI\Final Project\New version\GHC2-main\GHC2\CustomFolder\css\docStyle2.css" rel="stylesheet" />*@
+    <link href="~/CustomFolder/css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/CustomFolder/css/docStyle2.css">
+    <link href="~/CustomFolder/css/casrds.css" rel="stylesheet" />
+    <script src="~/CustomFolder/docJs.js"></script>
+    <style>
+        .topNav {
+            background: #576574 !important;
+            /* box-shadow: 1px 2px 10px black;*/
+        }
+
+        .SideNav {
+            /* background: linear-gradient(50deg,rgb(24, 4, 114),rgb(13, 13, 224)); */
+            /* background-color:  rgb(9, 9, 68);*/
+            background-color: #576574;
+        }
+        .preloader {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #fff;
+            z-index: 11000;
+            position: fixed;
+            display: block
+        }
+
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            overflow: hidden;
+            background: #fff;
+        }
+
+            #preloader:before {
+                content: "";
+                position: fixed;
+                top: calc(50% - 30px);
+                left: calc(50% - 30px);
+                border: 6px solid green;
+                border-top-color: #fff;
+                border-bottom-color: #fff;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                -webkit-animation: animate-preloader 1s linear infinite;
+                animation: animate-preloader 1s linear infinite;
+            }
+
+        @@-webkit-keyframes animate-preloader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @@keyframes animate-preloader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d-flex" id="wrapper"style="">
+
+        <!-- Sidebar -->
+        <div class=" SideNav unblur" id="sidebar-wrapper">
+            <div style="height: 180px; margin-bottom: 20px;" class=" ">
+                <img src="~/CustomFolder/download.jpg" alt="" class="rounded-circle SidePhoto" style="max-width: 100%;max-height: 100%; ">
+            </div>
+            <hr style="color:black;margin:0px ;padding:0" />
+            <div class="list-group list-group-flush ">
+                <a href="~/Patient/GetPatientProfileReadonly" onclick="profileAnchor()">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Profile
+                </a>
+                <hr style="color:black;margin:0px ;padding:0" />
+                <a href="~/Patient/GetAppointmentPatient">
+                    <i class="fa fa-table" aria-hidden="true"></i>
+                    MyAppointments
+                </a>
+                <hr style="color:black;margin:0px ;padding:0" />
+                <a href="~/Patient/GetDoctors"><i class="fa fa-user-md" aria-hidden="true"></i> Doctors</a>
+
+                <hr style="color:black;margin:0px ;padding:0" />
+                <a asp-action="Indexx" asp-controller="Home" onclick="chatAnchor()"><i class="fa fa-commenting-o" aria-hidden="true"></i> Chat</a> <hr style="color:black;margin:0px ;padding:0" />
+
+                <a href="#" onclick="logoutAnchor()"> <i class="fa fa-power-off" aria-hidden="true"></i> Logout</a> <hr style="color:black;margin:0px ;padding:0" />
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light   topNav unblur">
+                <button class="btn btn-outline-light " id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+                <div class="container" style="margin-left:40%">
+                    <h2 class="logo me-auto " style="color: white">G H C</h2>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+                        <li class="nav-item dropdown  ">
+                            <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                                <span class="user-img">
+                                    <img class="rounded-circle" src="~/CustomFolder/download.jpg" width="24" alt="Admin">
+
+                                </span>
+                                <span style="color:white">Patient</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                @*<a class="dropdown-item" href="#">My Profile</a>
+                                <a class="dropdown-item">Edit Profile</a>*@
+
+                                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                    <button type="submit" class="dropdown-item"><i class="fa fa-power-off" aria-hidden="true"></i>Logout</button>
+                                </form>
+
+                            </div>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <div>
+                <div class="container-fluid" style="height:570px;display:block;overflow-y:scroll;margin-bottom: 50px;">
+                    @RenderBody()
+                </div>
+                <br />
+                <div id="preloader">
+
+                </div>
+            </div>
+            <!-- /#wrapper -->
+            <!-- Bootstrap core JavaScript -->
+            <script src="~/CustomFolder/vendor/jquery/jquery.min.js"></script>
+            <script src="~/CustomFolder/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="~/CustomFolder/docJs.js"></script>
+
+
+            <!-- Menu Toggle Script -->
+            <script>
+                    $("#menu-toggle").click(function (e) {
+                        e.preventDefault();
+                        $("#wrapper").toggleClass("toggled");
+
+                    });
+            </script>
+            <script>
+                !(function ($) {
+                    "use strict";
+
+                    // Preloader
+                    $(window).on('load', function () {
+                        if ($('#preloader').length) {
+                            $('#preloader').delay(500).fadeOut('slow', function () {
+                                $(this).remove();
+                            });
+                        }
+                    });
+                })(jQuery);
+            </script>
+            <script>
+                    var myNodelist = document.getElementsByTagName("LI");
+
+                    var i;
+
+
+                    for (i = 0; i < myNodelist.length; i++) {
+                        if (myNodelist[i].parentElement.className == 'ToDo') {
+                            var span = document.createElement("SPAN");
+                            var txt = document.createTextNode("\u00D7");
+                            span.className = "close";
+
+                            span.appendChild(txt);
+                            myNodelist[i].appendChild(span);
+                        }
+                    }
+
+                    // Click on a close button to hide the current list item
+                    var close = document.getElementsByClassName("close");
+                    var i;
+                    for (i = 0; i < close.length; i++) {
+                        close[i].onclick = function () {
+                            var div = this.parentElement;
+                            div.style.display = "none";
+                        }
+                    }
+
+
+
+                    // Add a "checked" symbol when clicking on a list item
+                    var list = document.getElementById('myUL')
+                    list.addEventListener('click', function (ev) {
+                        if (ev.target.tagName === 'LI') {
+                            ev.target.classList.toggle('checked');
+                        }
+                    }, false);
+
+                    // Create a new list item when clicking on the "Add" button
+                    function newElement() {
+                        var li = document.createElement("li");
+                        var inputValue = document.getElementById("myInput11").value;
+                        var t = document.createTextNode(inputValue);
+                        li.appendChild(t);
+                        if (inputValue === '') {
+                            alert("You must write something!");
+                        } else {
+                            document.getElementById("myUL").appendChild(li);
+                        }
+                        document.getElementById("myInput11").value = "";
+
+                        var span = document.createElement("SPAN");
+                        var txt = document.createTextNode("\u00D7");
+                        span.className = "close";
+                        span.appendChild(txt);
+                        li.appendChild(span);
+
+                        for (i = 0; i < close.length; i++) {
+                            close[i].onclick = function () {
+                                var div = this.parentElement;
+                                div.style.display = "none";
+                            }
+                        }
+                }
+               
+
+
+            </script>
+</body>
+
+</html>
+

@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Doctor</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/docStyle2.css">
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class=" SideNav unblur" id="sidebar-wrapper">
+      <div style="height: 230px; margin-bottom: 20px;" class="sidePhotoBG">
+        <img src="doc.webp" alt="" style="max-width: 100%;max-height: 100%; ">
+      </div>
+      <div class="list-group list-group-flush ">
+        <a href="#" onclick="profileAnchor()"><i class="fa fa-home" aria-hidden="true" style="color: white;"></i>
+          Profile</a>
+        <a href="#" onclick="appoientmentAnchor()"> <i class="fa fa-table" aria-hidden="true" style="color: white;"></i>
+          Appointment</a>
+        <a href="#" onclick="doctorsAnchor()"><i class="fa fa-user-md" aria-hidden="true"></i> Doctors</a>
+        <a href="#" onclick="patientHistoryAnchor()"><i class="fa fa-user-circle" aria-hidden="true"></i> Patients
+          History</a>
+        <a href="#" onclick="chatAnchor()"><i class="fa fa-commenting-o" aria-hidden="true"></i> Chat</a>
+        <a href="#" onclick="settingAnchor()"> <i class="fa fa-cog" aria-hidden="true"></i> Setting</a>
+        <a href="#" onclick="logoutAnchor()"> <i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light   topNav unblur">
+        <button class="btn btn-primary " id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid" style=" height:580px;display:block;overflow-y:scroll;margin-bottom: 50px;">
+
+        <div id="profileContainer" class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card grad" style="background-color: #e0e6e9; border: black 1px solid;">
+                <div class="card-body">
+                  <div class="container-fluid" style="padding:0px;">
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-top: -5px;margin-bottom: 0px;margin-left: 10px;color: #020944; font-size: x-large;font-weight: bold;">
+                        Total Patients</div>
+                    </div>
+                    <div class="row " style="padding-left:8% ;margin-top:-5px">
+                      <div class="col-xs-3  " style="color: #b80e85; font-size: 40px;font-weight: bold;">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-3" style="width: 50%">
+
+                      </div>
+                      <div class="col-xs-3 " style="color: #b80e85; font-size: 40px;font-weight: bold;"
+                        id="Patientnumber">234</div>
+                    </div>
+                    <div class="row col-lg-12 "
+                      style="text-align: center;margin-top: -5px;margin-left: 10%;color: #020944; font-size: large;">
+                      Total number of patients</div>
+                    <!-- end test -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  style="background-color: #e0e6e9" -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card  grad " style="border: black 1px solid;">
+                <div class="card-body">
+                  <!--  -->
+
+
+                  <!--  -->
+                  <div class="container-fluid" style="padding:0px;">
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-top: -10px;margin-bottom: 0px;margin-left: 10px;color: #020944; font-size: x-large;font-weight: bold;">
+                        Appoientments</div>
+                    </div>
+                    <div class="row " style="padding-left:8% ;margin-top:-5px">
+                      <div class="col-xs-3  " style=" color: #b80e85; font-size: 40px;font-weight: bold;">
+                        <i class="fa fa-table" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-3" style="width: 50%">
+
+                      </div>
+                      <div class="col-xs-3 " style="color: #b80e85; font-size: 40px;font-weight: bold;"
+                        id="AppointmentsNumber">190</div>
+                    </div>
+                    <div class="row col-lg-12 text-center"
+                      style=" margin-top: -5px;margin-left: 3%;color: #020944; font-size: large;">
+                      Total number of Appoientments</div>
+                    <!-- end test -->
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-lg-4  ">
+              <div class="card  grad " style="border: black 1px solid;">
+                <div class="card-body" style="padding: 0px;">
+                  <!-- test -->
+                  <!-- <div style="float: right;height: 100%; background-color: #111;">
+                <div class="Wall">
+                  <div class="calendar">
+
+                    <div class="frame">
+                      <div class="left screw">
+                        <div class="line"></div>
+                        <div class="shine"></div>
+                      </div>
+                      <div class="right screw">
+                        <div class="rerotate line"></div>
+                        <div class="shine"></div>
+                      </div>
+                      <div class="year">
+                       
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <h2 id="monthCaption">May</h2>
+                      <h1 id="dayCaption">28</h1>
+                    </div>
+
+                    <div class="over"></div>
+                  </div>
+                </div>
+             
+            </div> -->
+                  <!-- test -->
+                  <div class="container-fluid " >
+                    <div class="row">
+                      <div class="col-sm-12 " style="background: rgb(131, 133, 138);border-radius: 10px 10px 0 0; color: white;">
+                  <h1 id="yearCaption" style="text-align: center;">1990</h1>
+                </div>
+                </div>
+                <div class="content">
+                <div class="row">
+                  <div class="col-sm-5" style="width:50%;">
+                    <h1 id="dayCaption">28</h1>
+                  </div>
+                    <div class="col-sm-7" style="width:50%;">
+                    <h2 id="monthCaption">May</h2>
+                  </div>
+                 
+                  </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+
+          <div class="row  ">
+            <!--  ---start news--------------------------------------------------------------------------------->
+            <div class="col-lg-8">
+              <div class="card" style=" box-shadow: 1px 2px 5px black;border: black 1px solid; border-radius: 15px;margin-bottom: 20px; ">
+                <div class="card-body" style="margin: -10px;border-radius: 15px;">
+                  <script type="text/javascript">
+
+                    rssfeed_url = new Array();
+                    rssfeed_url[0] = "https://www.medicinenet.com/rss/dailyhealth.xml";
+                    rssfeed_frame_width = '100%';
+                    rssfeed_frame_height = "510";
+                    rssfeed_scroll = "on";
+                    rssfeed_scroll_step = "6";
+                    rssfeed_scroll_bar = "off";
+                    rssfeed_target = "_blank";
+                    rssfeed_font_size = "18";
+                    rssfeed_font_face = "";
+                    rssfeed_border = "off";
+                    rssfeed_css_url = "";
+                    rssfeed_title = "on";
+                    rssfeed_title_name = "";
+                    rssfeed_title_bgcolor = "#3366ff";
+                    rssfeed_title_color = "#f5f6fa";
+                    rssfeed_title_bgimage = "";
+                    rssfeed_footer = "off";
+
+                    rssfeed_footer_bgcolor = "#fff";
+                    rssfeed_footer_color = "#333";
+                    rssfeed_footer_bgimage = "";
+                    rssfeed_item_title_length = "50";
+                    rssfeed_item_title_color = "#000";
+                    rssfeed_item_bgcolor = "";
+                    rssfeed_item_bgimage = "";
+                    rssfeed_item_border_bottom = "on";
+                    rssfeed_item_source_icon = "off";
+                    rssfeed_item_date = "off";
+                    rssfeed_item_description = "on";
+                    rssfeed_item_description_length = "120";
+                    rssfeed_item_description_color = "#666";
+                    rssfeed_item_description_link_color = "#333";
+                    rssfeed_item_description_tag = "off";
+                    rssfeed_no_items = "0";
+                    rssfeed_cache = "14314cf3dad45052d9bb09bbb5bd5e6f";
+
+                  </script>
+                  <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+                  <!-----End news--------------------------------------------------------------------------------------  -->
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-4">
+              <!---Enter the to do list-->
+              <div class="card grad" style="margin-top: 0px; border: black 1px solid;">
+                <div class="card-body" style="padding:4px;">
+                  <!---------------------- start to do list ------------------ -->
+                  <div class="ToDo">
+                    <div id="myDIV" class="header">
+                      <h4 style="margin:5px">To Do List</h4>
+                      <input type="text" id="myInput" placeholder="Title...">
+                      <span onclick="newElement()" class="addBtn">Add</span>
+                    </div>
+
+                    <ul id="myUL" class="ToDo">
+                      <li>Hit the gym</li>
+                      <li class="checked">Pay bills</li>
+                      <li>Meet George</li>
+                      <li>Buy eggs</li>
+                      <li>Read a book</li>
+                      <li>Organize office</li>
+                    </ul>
+                  </div>
+                  <!---------------------- End to do list ------------------ -->
+                </div>
+              </div>
+
+            </div>
+          </div><!-- end row2--->
+        </div>
+
+        <!-- End card 1 lefy-->
+        <!-- start card 2 lefy-->
+
+        <!------------------end profile container ------------->
+        <!------------------start Appointment  container ------------->
+        <div id="appointmentContainer" class="container-fluid " style="margin:0px;display:none">
+          <div class="row" style="margin-top: 30px;margin: 0px;">
+            <h1 class="topLeftContainerName ">All Appointments</h1>
+          </div>
+          <div class="row Appoint">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <!-- start Appointment table -->
+              <input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search for names.."
+                title="Type in a name">
+              <div class="table-responsive _text-nowrap ">
+                <table id="myTable1" >
+                  <thead>
+                    <tr class="header">
+                      <th style="width:25%;">Name</th>
+                      <th style="width:15%;">phone</th>
+                      <th style="width:25%;">Address</th>
+                      <th style="width:20%;">Date</th>
+                      <th style="width:15%; text-align: right;"># </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>mmmmmm </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                    
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn btnDteteRow"><i
+                            class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn  btnEnterId"><i
+                            class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                      
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn btnDteteRow"><i
+                            class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>dddd </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                   
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn btnDteteRow"><i
+                            class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>ddddd </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+               
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn btnDteteRow"><i
+                            class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                    <tr>
+                   
+                    <tr>
+                      <td>dddsaaaaaaaaaaaaa </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                    
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn"><i class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Alfreds </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                      
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn"><i class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                   
+                    
+                    <tr>
+                      <td>Alfreds </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                  
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn"><i class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Alfreds </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn"><i class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                
+                    <tr>
+                      <td>Alfreds </td>
+                      <td>Germany</td>
+                      <td>Alfreds </td>
+                      <td>Germany</td>
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn"><i class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Alfreds </td>
+                      <td>Germany</td>
+                      <td>sssss </td>
+                      <td>Germany</td>
+                      <td>
+                        <button type="button" class="btn btn-danger tblBtn"><i class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-primary tblBtn "><i class="far fa-eye"></i></button>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- start Confirm Delete Message -->
+            <div id="confirm1" class="unblur">
+              <div class="message1">You really want to remove this patient .</div>
+
+              <button id="yes1">OK</button> <button id="No1">No</button>
+            </div>
+            <div id="patientIdForm" class="unblur">
+              <div class="message2">Please Enter The Patient Id</div>
+
+              <input type="text" id="txtPatientId" placeholder="Enter patient ID">
+              <button id="btnGo">Go</button> <button id="cancleId">Cancel</button>
+            </div>
+            <!-- <input type="button" value="Click Me" onclick="functionAlert();" /> -->
+            <!-- End Confirm Delete Message -->
+
+            <!-- End Appointment table -->
+          </div>
+
+        </div>
+
+        <!------------------end Appointement  container ------------->
+        <!------------------Start Doctors  container ------------->
+        <div id="DoctorsContainer" class="container-fluid">
+          <div class="row ">
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card doctorsCard">
+                <img class="card-img-top doctorsCardImg" src="doc2.webp" alt="Card image cap">
+                <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!------------------end Doctors  container ------------->
+        <!------------------Start Patient profile from doctor  container ------------->
+        <div id="PatientProfileShownByDoctor" class="container-fluid  ">
+          <form>
+            <fieldset class="form-group">
+              <div class="row patientPersonalDateheader">
+                Patient personal Data
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="PatientNID">National ID</label>
+                  <input type="text" class="form-control " id="PatientNID" placeholder="National ID" readonly>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationServer02">Name</label>
+                  <input type="text" class="form-control " id="PatientName" placeholder="Name" readonly>
+
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationServer02">Birth Date</label>
+                  <input type="date" class="form-control " id="PatientBirthDate" placeholder="Birth Date" readonly>
+
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="Phone">Phone</label>
+                  <input type="tel" class="form-control" id="PatientPhone" placeholder="PatientPhone" readonly>
+
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="Phone">Address</label>
+                  <input type="date" class="form-control " id="PatientAddress" placeholder="PatientAddress" readonly>
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label for="Phone">Blood Type</label>
+                  <input type="text" class="form-control " id="PatientBloodType" placeholder="Blood Type" readonly>
+
+                </div>
+              </div>
+              <!-- Gender check buttons -->
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">Gender</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Gender" id="inlineRadio1" value="Male" readonly
+                  disabled>
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Gender" id="inlineRadio2" value="Female" disabled>
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+              </div>
+
+              <!--  -->
+            </fieldset>
+          </form>
+          <fieldset class="form-group" style="padding: 5px;">
+
+            <!-- start patient diagonisis table -->
+            <div class="row Appoint">
+              <div class="col-lg-12 col-md-12 col-xs-12">
+                <!-- start Appointment table -->
+                <div class="patientDiagnosesheader">Patient Diagnoses<input type="text" id="txtDeptSearch"
+                    onkeyup="txtSearchFunction1()" placeholder="Search for department." title="Type in a name">
+                  <button id="btnAddNewDiagnose" data-toggle="modal" data-target="#myModal">+</button>
+                </div>
+                <div class="table-responsive _text-nowrap " style="width: 100%;">
+                  <table id="DiagnosesTBl">
+                    <thead>
+                      <tr class="header">
+                        <th style="width:50%;">Name</th>
+                        <th style="width:40%;">Country</th>
+                        <th style="width:10%; text-align: right;">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>sssss </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>dddd </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ddddd </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>dddddsssssasasasasa</td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>dddsaaaaaaaaaaaaa </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds </td>
+                        <td>Germany</td>
+                        <td>
+                          <button type="button" class="btnShowDiagonesDetails">Details</i></button>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- End patient diagonisis table  -->
+          </fieldset>
+
+          <!-----------------------------.////////////////// start Add diagnose model ////////////////////////////////////////////-->
+          
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal" style="margin-top:5px;">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">New Diagnose</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body " style="display: block;overflow-y: auto; height: 530px;">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-xl-12">
+                          <label for="diagnoseTxtarea"
+                            style="font-size: 20px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Diagnose
+                            report</label>
+                          <textarea row='5' class="diagnose" id="diagnoseTxtarea"
+                            style="width: 100%; height: 200px;font-size: 22px; color: black; padding: 5px;">
+              </textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <label for="diagnoseTxtarea"
+                            style="font-size: 20px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Medicine</label>
+                          <div class="dropdown" style="width: 100%;">
+                            <div id="myDropdown" class="dropdown-content" style="width: 100%;">
+                              <input type="text" placeholder="Search.." id="dropSearch" onkeyup="filterFunction()"
+                                style="position: sticky;top: 0px; display: block;width: 100%;">
+                              <div>
+                                <ul style="height:150px;width:100%; padding:0px">
+                                  <a href="#about">About FGHAFHSDHHADAGHSDG</a>
+                                  <a href="#base">BaseJGFDJGJFDKKDJK</a>
+                                  <a href="#blog">BlogKJDKFDJGJKDGKJGKDJF</a>
+                                  <a href="#contact">ContactVJKXKCKJKVJC</a>
+                                  <a href="#custom">CustomFJDFKJDKFJKD</a>
+                                  <a href="#support">SupportXKKXJKXJKXJX</a>
+                                  <a href="#tools">ToolsLXKLKLKXZ\K</a>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-------------------End Diagonse medicine ------------------------ -->
+                          </div>
+                        </div>
+                        <div class="col-xl-6">
+                          <label for="diagnoseTxtarea"
+                            style="font-size: 20px;color: black;font-family: Arial, Helvetica, sans-serif; margin-top: 10px;">Dose
+                          </label>
+                          <div class="dropdown" style="width: 100%;">
+                            <div id="myDropdown2" class="dropdown-content" style="width: 100%;">
+                              <input type="text" placeholder="Search.." id="dropSearch" onkeyup="filterFunction()"
+                                style="position: sticky;top: 0px; display: block;width: 100%;">
+                              <div>
+                                <ul style="height:150px;width:100%; padding:0px">
+                                  <a href="#about">About FGHAFHSDHHADAGHSDG</a>
+                                  <a href="#base">BaseJGFDJGJFDKKDJK</a>
+                                  <a href="#blog">BlogKJDKFDJGJKDGKJGKDJF</a>
+                                  <a href="#contact">ContactVJKXKCKJKVJC</a>
+                                  <a href="#custom">CustomFJDFKJDKFJKD</a>
+                                  <a href="#support">SupportXKKXJKXJKXJX</a>
+                                  <a href="#tools">ToolsLXKLKLKXZ\K</a>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-------------------End Diagonse medicine ------------------------ -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-12">
+                          <label for="diagnoseTxtarea"
+                            style="font-size: 20px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Add
+                            note</label>
+                          <!-- <label for="" style="font-size: 15px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Radiology required</label> -->
+                          <input type="text" placeholder="Add note" id="medicineNote"
+                            style=" width: 100%; font-size: 15px;padding: 3px;">
+                        </div>
+                      </div>
+                      <div class="row" style="margin-top: 20px;">
+                        <div class="col-xl-12">
+                          <button id="btnAddMedicine" class="btn-primary justify-center"
+                            style="width: 80%;border-radius: 5px  ; margin: 5px;height:40px;font-size: 20px;margin-left: 10%;">Add
+                            medicine</button>
+                        </div>
+                      </div>
+                      <div class="row " style="width: 100%; margin:0px;padding: 0px; margin-top:20px">
+                        <div class="col-xl-12 Appoint" style="width: 100%; margin:0px;padding: 0px; ">
+                          <!-- medicine table -->
+                          <label for="diagnoseTxtarea"
+                            style="font-size: 20px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Prescription</label>
+
+                          <table id="HestoricalTbl" class="TblClass" style="width: 100%; margin:0px;padding: 0px; box-shadow: none;">
+                            <thead>
+                              <tr class="header">
+                                <th style="width:50%;">Medicine</th>
+                                <th style="width:30%;">Dose</th>
+                                <!-- <th style="width:30%;">note</th> -->
+                                <th style="width:20%; text-align: right;"># Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+
+                              <tr>
+                                <td>sssss </td>
+                                <td>Germany</td>
+                                <td>
+                                  <button type="button" class="btn btn-danger tblBtn btnDteteRow"><i
+                                      class="far fa-trash-alt"></i></button>
+
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>dddd </td>
+                                <td>Germany</td>
+                                <td>
+                                  <button type="button" class="btn btn-danger tblBtn btnDteteRow"><i
+                                      class="far fa-trash-alt"></i></button>
+
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>ddddd </td>
+                                <td>Germany</td>
+                                <td>
+                                  <button type="button" class="btn btn-danger tblBtn btnDteteRow"><i
+                                      class="far fa-trash-alt"></i></button>
+
+
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>dddddsssssasasasasa</td>
+                                <td>Germany</td>
+                                <td>
+                                  <button type="button" class="btn btn-danger tblBtn btnDteteRow"><i
+                                      class="far fa-trash-alt"></i></button>
+
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <!-- start Confirm Delete Message -->
+
+                          <!-- <input type="button" value="Click Me" onclick="functionAlert();" /> -->
+                          <!-- End Confirm Delete Message -->
+
+                          <!-- End Appointment table -->
+                        </div>
+
+                        <!-- end table -->
+                      </div>
+
+
+                      <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+                        <div class="col-xl-6">
+                          <label for=""
+                            style="font-size: 15px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Radiology
+                            required</label>
+                          <input type="text" placeholder="Enter required radiology" id="RadiologyRequired"
+                            style=" width: 100%; font-size: 15px;padding: 3px;">
+                        </div>
+                        <div class="col-xl-6">
+                          <label for=""
+                            style="font-size: 15px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Medical
+                            analyzes required</label>
+                          <input type="text" placeholder="Enter required analyzes" id="MedicalAnalyzesRequired"
+                            style=" width: 100%; font-size: 15px;padding: 3px;">
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          <!-----------------------------.////////////////// ENd Add diagnose model ////////////////////////////////////////////-->
+          <!-----------------------------.////////////////// Start Show details diagnose model ////////////////////////////////////////////-->
+          <div class="container">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdl">
+              Open modal
+            </button>
+            <!-- Button to Open the Modal -->
+            <h4>Diagnose Details</h4>
+           
+
+            <!-- The Modal -->
+            <div class="modal fade" id="mdl" style="margin-top:5px;overflow-y: hidden;">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Diagnose Details</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body " style="display: block;overflow-y: auto; height: 530px;">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-xl-12">
+                          <label for="diagnoseTxtareaDetails"
+                            style="font-size: 20px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Diagnose
+                            report</label>
+                          <textarea row='5' class="diagnose" id="diagnoseTxtareaDetails"
+                            style="width: 100%; height: 200px;font-size: 22px; color: black; padding: 5px;" readonly>
+                </textarea>
+                        </div>
+                      </div>
+
+
+                      <div class="row " style="width: 100%; margin:0px;padding: 0px; margin-top:20px">
+                        <div class="col-xl-12 Appoint" style="width: 100%; margin:0px;padding: 0px; ">
+                          <!-- medicine table -->
+                          <label for="diagnoseTxtarea"
+                            style="font-size: 20px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Prescription</label>
+
+                          <table id="PrescriptionTbl" class="TblClass" style="width: 100%; margin:0px;padding: 0px; box-shadow: none;">
+                            <thead>
+                              <tr class="header">
+                                <th style="width:35%;">Medicine</th>
+                                <th style="width:35%;">Dose</th>
+                                <th style="width:30%;">Note</th>
+                                <!-- <th style="width:30%;">note</th> -->
+                                <!-- <th style="width:20%; text-align: right;"># Action</th> -->
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>mmmmmm </td>
+                                <td>Germany</td>
+                                <td></td>
+                              </tr>
+
+                              <tr>
+                                <td>sssss </td>
+                                <td>Germany</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>dddd </td>
+                                <td>Germany</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>ddddd </td>
+                                <td>Germany</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>dddddsssssasasasasa</td>
+                                <td>Germany</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <!-- start Confirm Delete Message -->
+
+                          <!-- <input type="button" value="Click Me" onclick="functionAlert();" /> -->
+                          <!-- End Confirm Delete Message -->
+
+                          <!-- End Appointment table -->
+                        </div>
+
+                        <!-- end table -->
+                      </div>
+
+
+                      <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+                        <div class="col-xl-6">
+                          <label for=""
+                            style="font-size: 15px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Radiology
+                            required</label>
+                          <input type="text" placeholder="Enter required radiology" id="RadiologyRequiredDetails"
+                            style=" width: 100%; font-size: 15px;padding: 3px;" readonly>
+                        </div>
+                        <div class="col-xl-6">
+                          <label for=""
+                            style="font-size: 15px;color: black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;">Medical
+                            analyzes required</label>
+                          <input type="text" placeholder="Enter required analyzes" id="MedicalAnalyzesRequiredDetails"
+                            style=" width: 100%; font-size: 15px;padding: 3px;" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+
+            </div>
+            <!-----------------------------.////////////////// End Show details diagnose model ////////////////////////////////////////////-->
+
+          </div>
+       
+        </div>
+   
+  
+  
+
+        <!------------------end Patient profile from doctor ------------->
+
+        <!------------------Start Paients history  container ------------->
+
+        <div id="PatientsHistoryContainer" class="container-fluid">
+          <div class="row ">
+            <div class="col-lg-4 col-sm-6">
+              <div class="card patientCard">
+                <img class="card-img-top doctorsCardImg" src="patient2.jpg" alt="Card image cap">
+                <!-- <div class="card-body">
+                 <h5 class="card-title">Card title</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card patientCard">
+                <img class="card-img-top doctorsCardImg" src="patient2.jpg" alt="Card image cap">
+                <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card patientCard">
+                <img class="card-img-top doctorsCardImg" src="patient2.jpg" alt="Card image cap">
+                <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card patientCard">
+                <img class="card-img-top doctorsCardImg" src="patient2.jpg" alt="Card image cap">
+                <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card patientCard">
+                <img class="card-img-top doctorsCardImg" src="patient.jpg" alt="Card image cap">
+                <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card patientCard">
+                <img class="card-img-top doctorsCardImg" src="patient.jpg" alt="Card image cap">
+                <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="card patientCard">
+                <img class="card-img-top doctorsCardImg" src="patient.jpg" alt="Card image cap">
+                <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div> -->
+
+                <div class="card-body " style="margin-top: -30px;">
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+
+                  <hr class="doctorsCardHr">
+                  Cras justo odio
+                  <hr class="doctorsCardHr">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!------------------end patients history  container ------------->
+        <!------------------Start Chat container ------------->
+        <div id="ChatContainer" class="container c1 " style="margin:10px; height: 100% ;display: none">
+
+        </div>
+        <!------------------end Chat history  container ------------->
+        <!------------------Start Setting container ------------->
+        <div id="SettingContainer" class="container c1 " style="margin:10px; height: 100% ;display: none">
+
+        </div>
+        <!------------------end Setting container ------------->
+
+
+
+
+
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="docJs.js"></script>
+
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Chat>
+@{
+   Layout = "~/Views/Shared/_ChatLayout.cshtml";
+}
+<div class="chat-body">
+
+
+    @if (Model != null)
+    {
+        @*@foreach (var chat in Model)
+        {
+            <a class="room-btn" asp-action="JoinRoom" asp-controller="Home" asp-route-id="@chat.Id">
+                @chat.Name
+            </a>
+        }*@
+    }
+</div>
+@{
+    ViewData["Title"] = "Home Page";
+}
+

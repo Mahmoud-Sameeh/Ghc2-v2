@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Amanda Denyl" xml:space="preserve">
+    <value>Amanda Denyl</value>
+  </data>
+  <data name="Amanda Jepson" xml:space="preserve">
+    <value>Amanda Jepson</value>
+  </data>
+  <data name="ambh" xml:space="preserve">
+    <value>Ambulance</value>
+  </data>
+  <data name="ambp" xml:space="preserve">
+    <value>We can take you fas</value>
+  </data>
+  <data name="Anesthesiologist" xml:space="preserve">
+    <value>Anesthesiologist</value>
+  </data>
+  <data name="awa" xml:space="preserve">
+    <value>Awards</value>
+  </data>
+  <data name="Cardiology" xml:space="preserve">
+    <value>Cardiology</value>
+  </data>
+  <data name="Chief" xml:space="preserve">
+    <value>Chief Medical Officer</value>
+  </data>
+  <data name="Chiefp" xml:space="preserve">
+    <value>I will explain the softness of pleasure and pain as he drives</value>
+  </data>
+  <data name="Costs and prices" xml:space="preserve">
+    <value>Costs and prices</value>
+  </data>
+  <data name="dep" xml:space="preserve">
+    <value>Departments</value>
+  </data>
+  <data name="deperh" xml:space="preserve">
+    <value>The heart clinic is under the supervision of a group of heart consultants</value>
+  </data>
+  <data name="deperp" xml:space="preserve">
+    <value>In order to efficiently diagnose heart diseases and provide the necessary treatment for heart diseases, Ain Shams Specialized Hospital receives all heart disease cases such as acute strokes, myocardial prolapse and malignant cardiac arrhythmias, and it also provides all the services required for these cases such as:</value>
+  </data>
+  <data name="deperpp" xml:space="preserve">
+    <value>Emergency treatment catheter for cases of thrombosis around the clock.
+Installing modern devices for treating cardiac muscle weakness such as (CRT), or for treating cardiac arrhythmias such as pacemakers and external shock devices
+Complete medical care for critical cases of the heart and the necessary urgent measures such as insertion of the aortic balloon, temporary pacemaker, or pericardial endothelium.</value>
+  </data>
+  <data name="depp" xml:space="preserve">
+    <value>We have all departments in all specialties equipped at the highest level</value>
+  </data>
+  <data name="Designed by" xml:space="preserve">
+    <value>Designed by</value>
+  </data>
+  <data name="doc" xml:space="preserve">
+    <value>Doctors</value>
+  </data>
+  <data name="docp" xml:space="preserve">
+    <value>we have team of the best doctors</value>
+  </data>
+  <data name="Eye Care" xml:space="preserve">
+    <value>Eye Care</value>
+  </data>
+  <data name="Health care level" xml:space="preserve">
+    <value>Health care level</value>
+  </data>
+  <data name="Hepatology" xml:space="preserve">
+    <value>Hepatology</value>
+  </data>
+  <data name="hourh" xml:space="preserve">
+    <value>24 Hours Support</value>
+  </data>
+  <data name="hourp" xml:space="preserve">
+    <value>we introduce service for 24 hours all days</value>
+  </data>
+  <data name="john daly" xml:space="preserve">
+    <value>john Denyl</value>
+  </data>
+  <data name="labh" xml:space="preserve">
+    <value>Laboratory</value>
+  </data>
+  <data name="labp" xml:space="preserve">
+    <value>We have a good lab to inspect strictly</value>
+  </data>
+  <data name="malh" xml:space="preserve">
+    <value>Medical consultant</value>
+  </data>
+  <data name="malp" xml:space="preserve">
+    <value>you can check your health by consultant</value>
+  </data>
+  <data name="msg1" xml:space="preserve">
+    <value>General HealthCare is a place you trust Care you deserve.</value>
+  </data>
+  <data name="msg2" xml:space="preserve">
+    <value>Our integrated healthcare system provides exceptional care We combine the latest technology with the supportive, personal approach that is our hallmark</value>
+  </data>
+  <data name="Neurology" xml:space="preserve">
+    <value>Neurology</value>
+  </data>
+  <data name="Neurosurgeon" xml:space="preserve">
+    <value>Neurosurgeon</value>
+  </data>
+  <data name="Neurosurgeonp" xml:space="preserve">
+    <value>Times offices and denounce hate and pain labiciis</value>
+  </data>
+  <data name="Ophthalmologist" xml:space="preserve">
+    <value>Ophthalmologist</value>
+  </data>
+  <data name="pediatrician" xml:space="preserve">
+    <value>pediatrician</value>
+  </data>
+  <data name="Pediatrics" xml:space="preserve">
+    <value>Pediatrics</value>
+  </data>
+  <data name="research" xml:space="preserve">
+    <value>Research Labs</value>
+  </data>
+  <data name="Sarah Jhonson" xml:space="preserve">
+    <value>Sarah Jhonson</value>
+  </data>
+  <data name="Scientific research" xml:space="preserve">
+    <value>Scientific research</value>
+  </data>
+  <data name="ser" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="sermsg" xml:space="preserve">
+    <value>we introduce full service to anyone need to check his health , we introduce some of services and we will happy to help you.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Providing health care for the Egyptian community in general and the community of Ain Shams University in particular (and includes members of the university's faculty - students and university employees), provided that the care is integrated and at the highest level of quality and with the latest means.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Providing health care services in accordance with international standards of quality at medium prices instead of traveling abroad at exorbitant prices, as the Specialty Hospital is not a profit-making facility, but it was built on self-financing.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>It provides training and study services for the postgraduate stage, and also contributes to spreading science and research services to all groups at the university, including doctors, technical staff, medical engineering - nursing staff and information technology ... etc.</value>
+  </data>
+  <data name="testh" xml:space="preserve">
+    <value>Medical Test</value>
+  </data>
+  <data name="testp" xml:space="preserve">
+    <value>we have good laboratory</value>
+  </data>
+  <data name="William Anderson" xml:space="preserve">
+    <value>William Anderson</value>
+  </data>
+  <data name="xh" xml:space="preserve">
+    <value>X Ray</value>
+  </data>
+  <data name="xp" xml:space="preserve">
+    <value>we have good X Ray to be safe with</value>
+  </data>
+</root>

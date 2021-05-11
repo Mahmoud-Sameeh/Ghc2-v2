@@ -1,0 +1,305 @@
+﻿@model VMPatientDiagnosePrescription
+@{
+    ViewData["Title"] = "AddPatientDiagnose";
+    Layout = "~/Views/Shared/_DocotrsLayout.cshtml";
+}
+
+
+<div class="row ">
+
+
+    <div class="col-md-12">
+    </div>
+</div>
+<div class="container bcontent">
+    <div class="card" style="width: 100%;margin:auto;border-top:4px solid gray">
+        <div class="row no-gutters">
+            <div class="col-md-2">
+                <img class="card-img  rounded-circle CardPhotoPatients" style="margin-left:30%" src="@Url.Content(@Model.patient.ImageUrl)" alt="Suresh Dasari Card">
+
+
+            </div>
+            <div class=" col-md-9 ml-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                           <input type="hidden" value="@Model.patient.Nid" id="txtNid" />
+                            <div class="form-group mb-2">
+                                <label for="name">Name</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Patient Name" aria-label="Name" value="@Model.patient.Name" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="BirthDate">Birth Date</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="BirthDate" aria-label="Age" value="@Model.patient.BitrhDate.Date" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="Address">Address:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Address" value="@Model.patient.Address" aria-label="Address" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+
+                                <div class="form-check">
+                                    <label for="Gender" class="mr-5">Gender:</label>
+                                    @{ if (Model.patient.Gender.ToLower() == "male")
+                                        {<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Male
+                                            </label>
+                                        }
+                                        else
+                                        {
+
+                                            <input class="form-check-input ml-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                            <label class="form-check-label ml-4" for="flexRadioDefault1">
+                                                Female
+                                            </label>
+                                        }
+                                    }
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class=" col-md-6">
+                            <div class="form-group mb-2">
+                                <label for="Phone">Phone</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" value="@Model.patient.Phone" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="Bloodgroup">BloodGroup:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="BloodGroup"value="@Model.patient.BloodGroup" aria-label="BloodGroup" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="email">Email</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" value="@Model.patient.Email" readonly>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<form asp-action="AddPatientDiagnose" method="post" id="frmAdd"> </form>
+<div class="container bcontent">
+    <h5 style=" color:gray">&nbsp;&nbsp;   Diagnose Description </h5>
+    <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+        <div class="row mb-3 mt-2">
+
+            <div class="form-group" style="width:95%;margin:auto">
+                <textarea asp-for="@Model.diagnose.DiagnoseDescription" class="form-control" placeholder="Write Diagnose Description" id="Description" style="height: 100px"></textarea>
+                <span asp-validation-for="@Model.diagnose.DiagnoseDescription" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="container bcontent">
+    <h5 style=" color:gray">&nbsp;&nbsp;   Prescription </h5>
+    <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+        <div class="row no-gutters">
+            <div class="row" style="width:100%;margin-top:20px">
+                <div class="col-md-4 offset-1" style="margin-top:7px">
+                    <div class="form-group mb-2 ">
+                        <label for="medicine">Medicine:</label>&nbsp;&nbsp;
+                        @*<div class="dropdown">
+                                <button  class="btn btn-secondary dropdown-toggle"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu"  aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>*@
+                        <select id="MedicineSelect" asp-for="@Model.medicines" class="form-control" asp-items="@(new SelectList(Model.medicines,"Id","Name"))"> </select>
+                    </div>
+                </div>
+                <div class="offset-1 col-md-4 mr-6  " style="margin-top:7px;">
+                    <label for="Dose">Dose:&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;
+                    @*<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>*@
+                    <select id="DoseSelect" class="dropdown">
+                        <option>3times/day</option>
+                        <option>2times/day</option>
+                        <option>4times/day</option>
+                        <option>1times/day</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row mr-4 ml-4 mb-4" style="width:100%;margin:5px auto; ">
+
+                <label for="Note">Note:</label>&nbsp;&nbsp;
+
+                <textarea id="txtNote" class="form-control" placeholder="Write Your Note"style="height: 70px;width:100%"></textarea>
+
+
+
+            </div>
+
+            <div style=" width:100%;margin-bottom:10px;margin-left:250px;margin-top:20px">
+                <input type="button" class="btn btn-primary float-right"onclick="AddMedicine()" value=" Add " style=" border-radius:4px;padding:4px;width:100px;margin-right:10px" />
+            </div>
+            <div class="row ml-4 mr-4 mb-4" style="width:100%">
+                <h5 style="color:gray">&nbsp;&nbsp; prescription </h5>
+                <div class="card" style="width: 100%;margin:auto;border-top:2px solid gray;">
+                    <div class="row no-gutters">
+                        <div class="col-md-12">
+                            <div class="card table-responsive" style="border-radius:5px;border-top:2px solid gray;">
+                                <div class="card-body" style="width: 100%">
+                                    <blockquote class="blockquote mb-0" style="width: 100%">
+                                        <table class="table table-striped " style="width:100%">
+                                            <thead>
+
+                                                <tr>
+                                                    <th>Medicine Name</th>
+                                                    <th>Dose</th>
+                                                    <th>Note</th>
+                                                    <th>#</th>
+
+
+                                                </tr>
+                                            </thead>
+                                            <tbody id="prescriptionTbl">
+                                               
+                                            </tbody>
+                                        </table>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+<br />
+<div class="container " style="width:100%;margin:0px;    margin-left: 54px;
+">
+    <h5 style=" color:gray">&nbsp;&nbsp;   Needes </h5>
+    <div class="card" style="width: 100%;border-top:2px solid green">
+        <div class="row no-gutters" style="width:100%">
+            <div class="row" style="width:100%;margin-top:20px">
+                <div class="row mr-4 ml-4" style="width:100%;margin:5px auto; ">
+
+                    <label for="Note">Needed Radiations:</label>&nbsp;&nbsp;
+
+                    <input type="text" class="form-control" asp-for="@Model.diagnose.RequiredRadiation" placeholder="Write Your Need" id="txtRad" style="height: 50px;width:100%">
+
+
+
+                </div>
+                <div class="row mr-4 ml-4" style="width:100%;margin:5px auto; ">
+
+                    <label for="Note"> Needed Analyses:</label>&nbsp;&nbsp;
+
+                    <input type="text" asp-for="@Model.diagnose.RequiredAnalyses" class="form-control" placeholder="Write Your Need" id="neededAnTxt" style="height: 50px;width:100%">
+
+
+
+                </div>
+                <div style=" width:100%;margin-bottom:10px;margin-left:250px;margin-top:20px">
+                    <input type="button" class="btn btn-outline-danger mb-2 float-right" value=" Clear " style=" border-radius:4px;padding:4px;width:100px;margin-right:10px" />
+                    <input type="button" id="btnSave" class="btn btn-primary float-right" value=" Save " style=" border-radius:4px;padding:4px;width:100px;margin-right:10px" />
+
+                </div>
+                <div style=" width:100%;margin-bottom:10px;margin-left:250px;margin-top:20px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/CustomFolder/vendor/jquery/jquery.js"></script>
+<script type="text/javascript">
+    var frmAdd = document.getElementById("frmAdd");
+        var prescriptionTbl = document.getElementById("prescriptionTbl");
+        var MedicineSelect = document.getElementById("MedicineSelect");
+        var DoseSelect = document.getElementById("DoseSelect");
+        var txtNote = document.getElementById("txtNote");
+        function AddMedicine() {
+            var newTr = document.createElement("tr");
+            var MedicineTd = document.createElement("td");
+            var DoseTd = document.createElement("td");
+            var NoteTd = document.createElement("td");
+            var DeleteTd = document.createElement("td");
+            var Deletebtn = document.createElement("input");
+            Deletebtn.type = "button";
+            Deletebtn.className += "btn ";
+            Deletebtn.className += "btn-danger ";
+            Deletebtn.className += "Delete";
+            /* Deletebtn.onclick = "Delete()";*/
+            Deletebtn.style = "border-radius:4px;padding:4px;"
+            Deletebtn.value = " Delete ";
+            DeleteTd.appendChild(Deletebtn);
+            newTr.appendChild(MedicineTd);
+            newTr.appendChild(DoseTd);
+            newTr.appendChild(NoteTd);
+            newTr.appendChild(DeleteTd);
+            MedicineTd.innerText = MedicineSelect.options[MedicineSelect.selectedIndex].text;
+            DoseTd.innerText = DoseSelect.options[DoseSelect.selectedIndex].text;
+            NoteTd.innerText = txtNote.value;
+
+            prescriptionTbl.appendChild(newTr);
+    }
+    
+    $('#prescriptionTbl').on('click', 'input[type="button"]', function (e) {
+        $(this).closest('tr').remove();
+    });
+
+    $("#btnSave").click(function () {
+       
+        console.log("btnSave Triggered!");
+        var VMPatientDiagnosePrescriptionJson = {"PId":"NID", "Description": "text", "Analyses": "analyses", "Rad": "R","prescr":[] };
+        var PrescriptionMedicine = new Array();
+        $("#prescriptionTbl tr").each(function () {
+            var row = $(this);
+            var prescriptionMedicine = {};
+            prescriptionMedicine.name = row.find("td").eq(0).html();
+            prescriptionMedicine.Dose= row.find("td").eq(1).html();
+            prescriptionMedicine.Note = row.find("td").eq(2).html();
+            PrescriptionMedicine.push(prescriptionMedicine);
+        });
+        VMPatientDiagnosePrescriptionJson.PId = $('#txtNid').val();
+        VMPatientDiagnosePrescriptionJson.Description = $('#Description').val();
+        VMPatientDiagnosePrescriptionJson.Analyses = $('#neededAnTxt').val();
+        VMPatientDiagnosePrescriptionJson.Rad = $('#txtRad').val();
+        VMPatientDiagnosePrescriptionJson.prescr = PrescriptionMedicine;
+
+        console.log(VMPatientDiagnosePrescriptionJson);
+        var rr = { pid: "iid" };
+        $.ajax({
+            type: "POST",
+            url: "/Doctors/AddPatientDiagnose",
+            data: VMPatientDiagnosePrescriptionJson,
+            contentType: "application/x-www-form-urlencoded",
+            success: function (data) {
+                //url: "/Doctors/GetPatientProfileWithNewDiagnose"
+                window.location.href = location.origin+"/Doctors/GetPatientProfileWithNewDiagnose/" + VMPatientDiagnosePrescriptionJson.PId;
+                
+            }
+        });
+       /* $.post("/Doctors/AddPatientDiagnose", { data: r })*/
+    });
+
+</script>

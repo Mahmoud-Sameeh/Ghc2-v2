@@ -1,0 +1,318 @@
+﻿@model Chat
+@{
+    ViewData["Title"] = "Chat";
+    Layout = "~/Views/Shared/_ChatLayout.cshtml";
+    var right = "";
+    var left = "";
+    var user = User.Identity.Name;
+}
+@if (Model != null)
+{
+
+    <div class="container-fluid">
+        <div class="chat-box">
+            <div class="chats addtothis">
+                @foreach (var item in Model.Messages)
+                {
+                    @if (item.Name == User.Identity.Name)
+                    {
+                        <div class="chat chat-right">
+                            <div class="chat-body">
+                                <div class="chat-bubble">
+                                    <div class="chat-content">
+                                        <p> @item.Text</p>
+                                        @{
+                                            right = item.Name;
+                                        }
+                                        <span class="chat-time"> @item.TimeStamp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    else
+                    {
+                        <div class="chat chat-left">
+                            <div class="chat-avatar">
+                                <a href="profile.html" class="avatar">
+                                    <img alt="Jennifer Robinson" src="assets/img/patient-thumb-02.jpg" class="img-fluid rounded-circle">
+                                </a>
+                            </div>
+                            <div class="chat-body">
+                                <div class="chat-bubble">
+                                    <div class="chat-content">
+                                        <p><b>@item.Name:</b>@item.Text</p>
+                                        @{
+                                            left = item.Name;
+                                        }
+
+                                        <span class="chat-time"> @item.TimeStamp</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                    @*<div class="message">
+                            <header>
+                                @item.Name
+                            </header>
+                            <p>@item.Text</p>
+                            <footer>
+                                @item.TimeStamp
+                            </footer>
+                        </div>*@
+                }
+
+
+
+            </div>
+        </div>
+        <form class="chat-input" asp-controller="home" asp-action="CreateMessage" data-ajax="true">
+
+            <div class="chat-footer">
+                <div class="message-bar">
+                    <div class="message-inner">
+                        <a class="link attach-icon" href="#" data-toggle="modal" data-target="#drag_files"><img src="assets/img/attachment.png" alt=""></a>
+                        <div class="message-area">
+                            <div class="input-group">
+                                <input type="hidden" name="chatId" id="txtuser" value="@Model.Id">
+                                <input type="hidden" id="txtusere" value="@User.Identity.Name">
+                                <input type="hidden" name="roomName" id="" value="@Model.Name">
+                                <input class="form-control" name="message" id="txtmessage" placeholder="Type message...">
+                                <span class="input-group-append">
+
+                                    <button class="btn btn-primary" id="btnSend" type="submit"><i class="fa fa-send"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    @* <form class="chat-input" asp-controller="home" asp-action="CreateMessage" data-ajax="true">
+            <input type="hidden" name="chatId" id="txtuser" value="@Model.Id">
+            <input type="hidden" id="txtusere" value="@User.Identity.Name">
+            <input type="hidden" name="roomName" id="" value="@Model.Name">
+            <input type="text" name="message" id="txtmessage">
+            <button class="btn btn-info send" id="btnSend">send</button>
+        </form>*@
+}
+else
+{
+    @*<form class="chat-input" asp-controller="home" asp-action="CreateMessage">
+            <input type="hidden" name="chatId" id="txtuser">
+            <input type="text" name="message" id="txtmessage">
+            <button class="btn btn-info send" type="submit" id="btnSend">send</button>
+        </form>*@
+}
+
+
+@section Scripts{
+    <script src="~/aspnet-signalr/signalr.js"></script>
+
+    <script>
+        var sender = false
+      //  var allmessages =Model.Messages
+          //  console.log(allmessages)
+        var left = "@left";
+        var right = "@right";
+        var user = "@user";
+        var r = document.getElementsByClassName("chat-main-row")[0]
+
+
+
+
+        var connection = new signalR.HubConnectionBuilder().withUrl("/chat").build();
+
+        connection.on("ReceiveMessage", function (fromUser, message) {
+            if (sender == true) {
+
+                //var msg = fromUser + ": " + message ;
+                var li = document.createElement("div");
+                //li.textContent = msg;
+                //$('#list').append(li);
+
+                li.classList.add("chat")
+                li.classList.add("chat-right")
+                var d = new Date()
+                li.innerHTML = `  <div class="chat chat-right">
+                            <div class="chat-body">
+                                <div class="chat-bubble">
+                                    <div class="chat-content">
+                                        <p>`+ message + `</p>
+                                        <span class="chat-time"> `+ d.toLocaleTimeString() + `</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+                $('.addtothis').append(li);
+            }
+            else {
+                //var msg = fromUser + ": " + message ;
+                var li = document.createElement("div");
+                //li.textContent = msg;
+                //$('#list').append(li);
+
+                li.classList.add("chat")
+                li.classList.add("chat-left")
+                var d = new Date()
+                li.innerHTML = `
+  <div class="chat chat-left">
+                            <div class="chat-avatar">
+                                <a href="profile.html" class="avatar">
+                                    <img alt="Jennifer Robinson" src="assets/img/patient-thumb-02.jpg" class="img-fluid rounded-circle">
+                                </a>
+                            </div>
+                            <div class="chat-body">
+                                <div class="chat-bubble">
+                                    <div class="chat-content">
+                                        <p><b>`+ right + `:</b>` + message + `</p>
+                                        <span class="chat-time"> `+ d.toLocaleTimeString() +`</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+`;
+                $('.addtothis').append(li);
+            }
+            sender = false;
+
+            var str = location.href;
+            var z = location.href.split('/')
+            var chatid = z[z.length - 1]
+
+           $.ajax({
+               type: "GET",
+               url: location.origin + "/"+chatid,
+            dataType: "json",
+               success: function (e) {
+
+                   console.log(e)
+                   console.log("xhr_request")
+                   document.getElementById("txtmessage").value = "";
+
+                   //  var fetched_data = xhr_request["results"];
+                   //for (i = 0; i < iLength; i++) {
+                   //    // This was the original jQuery way I was appending the JSON data
+                   //    // $("#CompanyFinderResultsContainer").append("<p>Name:&nbsp;" + fetched_data[i].name + "</p>");
+                   //    // I want to call a Partial View and Pass along the JSON data from this success function
+                   //    // I am thinking of making a call like this
+                  //}
+
+
+               },
+
+               error: function (e) {
+                   var w = e;
+                   console.log(w);
+                   document.getElementById("txtmessage").value = "";
+
+               },
+});
+
+        })
+
+        connection.start();
+        r.scrollTop = r.scrollHeight
+        window.scroll(0, window.innerHeight * 2)
+        $('#btnSend').on('click', function () {
+            //scroll
+            r.scrollTop = r.scrollHeight
+            window.scroll(0, window.innerHeight * 2)
+            var fromUser = $("#txtuser").val();
+            sender = true;
+            var message = $("#txtmessage").val();
+            connection.invoke("SendMessage", fromUser, message);
+            var data = { chatId: fromUser, message: message };
+        $.ajax({
+                url: '@Url.Action("Home", "CreateMessage")',
+                type: "get",
+                contentType: 'application/x-www-form-urlencoded',
+                data: data,
+                success: function (r) {
+
+                    //alert("kotb");
+                    //window.location.href = loaction.origin + "~/Doctors/Index"
+                    console.log("sdadsa");
+                },
+                    error: function() {
+                    //  alert("There was an error. Try again please!");
+                    }
+        });
+
+        })
+
+    //Disable send button until connection is established
+  //  document.getElementById("sendBtn").disabled = true;
+
+        @*connection.on("RecieveMessage", function (data) {
+
+        var message = document.createElement("div")
+        message.classList.add('message')
+        var header = document.createElement("header")
+        header.appendChild(document.createTextNode(data.name))
+        var p = document.createElement("p")
+        p.appendChild(document.createTextNode(data.text))
+
+        var footer = document.createElement("footer")
+        footer.appendChild(document.createTextNode(data.timestamp))
+
+        message.appendChild(header)
+        message.appendChild(p)
+        message.appendChild(footer)
+
+         document.querySelector('.chat-body').append(message)
+    });
+
+
+        var JoinRoom = function () {
+            var url = '/chat/JoinRoom/' + _connection + '/@Model.Name'
+        console.log(url)
+        axios.post(url, null)
+            .then(res => {
+                console.log('Room Joined!',res);
+            })
+            .catch(res => {
+                console.log('failed to join Room!', res);
+            })
+        }
+        connection.start()
+            .then(function () {
+                connection.invoke('GetConectionId')
+                    .then(function (connectionId) {
+                        _connection = connectionId
+                        JoinRoom()
+                    })
+            }).catch(function (err) {
+                console.log(err);
+
+            });
+        var form = null;
+        var sendMessage = function (event) {
+            event.preventDefault();
+            console.log(event.target)
+
+            var data = new FormData(event.target)
+            axios.post('/chat/SendMessage', data).then(res => {
+                console.log(data)
+                console.log('Messge sent')
+            })
+                .catch(err => {
+                    console.log("fail")
+                })
+
+
+
+        }*@
+
+
+    </script>
+}

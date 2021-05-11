@@ -1,0 +1,170 @@
+﻿@model Analysis
+@{
+    ViewData["Title"] = "GetPatientProfileReadonly";
+    Layout = "~/Views/Shared/_Patient.cshtml";
+}
+<div class="row mt-2">
+
+
+    <div class="col-md-12">
+    </div>
+</div>
+<div class="container bcontent">
+    <h5 style=" color:gray">&nbsp;&nbsp;  Patient analyse details </h5>
+    <div class="card" style="width: 100%;margin:auto ;border-top:2px solid green">
+        <div class="row no-gutters">
+            <div class="col-md-2">
+                <img class="card-img  rounded-circle CardPhotoPatients" style="margin-left:30%" src="@Url.Content(Model.Patient.ImageUrl)" alt="Suresh Dasari Card">
+            </div>
+            <div class=" col-md-9 ml-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-2">
+                                <label for="name">Name:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Patient Name" value="@Model.Patient.Name" aria-label="Name" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="age">Birthdate:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Birthdate" value="@Model.Patient.BitrhDate" aria-label="Age" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="Address">Address:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Address" value="@Model.Patient.Address" aria-label="Address" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+
+                                <div class="form-check">
+                                    <label for="Gender" class="mr-5">Gender:</label>
+                                    @{ if (Model.Patient.Gender.ToLower() == "male")
+                                        {<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Male
+                                            </label>
+                                        }
+                                        else
+                                        {
+
+                                            <input class="form-check-input ml-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                            <label class="form-check-label ml-4" for="flexRadioDefault1">
+                                                Female
+                                            </label>
+                                        }
+                                    }
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class=" col-md-5">
+                            <div class="form-group mb-2">
+                                <label for="Phone">Phone:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Phone" value="@Model.Patient.Phone" aria-label="Phone" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="Bloodgroup">BloodGroup:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="BloodGroup" aria-label="BloodGroup" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="email">Email:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Email" value="@Model.Patient.Email" aria-label="Email" readonly>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container bcontent">
+        <h5 style=" color:gray">&nbsp;&nbsp;   Analyses Type </h5>
+        <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+            <div class="row mb-3 mt-2">
+
+
+
+                <div class="form-group" style="width:95%;margin:auto">
+
+                    <textarea class="form-control" placeholder="Write Analyses Report" id="floatingTextarea2" style="height: 50px">@Model.Type</textarea>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bcontent">
+        <h5 style=" color:gray">&nbsp;&nbsp;   Analyses Report </h5>
+        <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+            <div class="row mb-3 mt-2">
+
+
+
+                <div class="form-group" style="width:95%;margin:auto">
+
+                    <textarea class="form-control" placeholder="Write Analyses Report" id="floatingTextarea2" style="height: 100px">@Model.Report</textarea>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container bcontent">
+        <h5 style=" color:gray">&nbsp;&nbsp;   Note </h5>
+        <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+            <div class="row mb-3 mt-2">
+
+
+
+                <div class="form-group" style="width:95%;margin:auto">
+
+                    <textarea class="form-control" placeholder="Write Notes" id="floatingTextarea2" style="height: 100px">@Model.Note</textarea>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container bcontent">
+        <h5 style=" color:gray">&nbsp;&nbsp;   Attached File </h5>
+        <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+            <div class="row no-gutters">
+                <div class="row" style="width:100%;margin-top:20px">
+                    <div class="col-md-4 offset-1" style="margin-top:7px">
+                        <div class="form-group mb-2 ">
+                            <label for="date">Date:</label>&nbsp;&nbsp;
+                            <input asp-for="@Model.DateAndTime" type="text" class="btn small" id="button" data-date-format="yyyy-mm-dd" data-date="2012-02-20" value="@Model.DateAndTime" />
+
+                        </div>
+                    </div>
+                    <div class="offset-1 col-md-4 mr-2 mb-3 " style="margin-top:7px;">
+                        <label class="form-label" for="customFile"> Attached file</label>
+                        <a class="btn btn-outline-primary" id="customFile" href="@Url.Content(Model.AttachUrl)" target="_blank">Read File</a>
+
+
+                    </div>
+
+
+
+                    @*<div style=" width:100%;margin-bottom:10px;margin-left:250px;margin-top:20px">
+            <input type="button" class="btn btn-outline-danger mb-2 float-right" value=" Clear " style=" border-radius:4px;padding:4px;width:100px;margin-right:10px" />
+            <input type="button" class="btn btn-primary float-right" value=" Save " style=" border-radius:4px;padding:4px;width:100px;margin-right:10px" />
+
+        </div>*@
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*<script>
+
+            $('#button').datepicker()
+        .on('changeDate', function(ev){
+            $('#button').datepicker('hide');
+            alert(ev.date.valueOf());
+        });
+        </script>*@
+

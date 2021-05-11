@@ -1,0 +1,514 @@
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\appsettings.Development.json
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\appsettings.json
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.StaticWebAssets.xml
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.exe
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.deps.json
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.runtimeconfig.json
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.runtimeconfig.dev.json
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ref\GHC2.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.pdb
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.Views.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.Views.pdb
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Humanizer.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.csprojAssemblyReference.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.AssemblyInfoInputs.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.AssemblyInfo.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.csproj.CoreCompileInputs.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.MvcApplicationPartsAssemblyInfo.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.MvcApplicationPartsAssemblyInfo.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorAssemblyInfo.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorAssemblyInfo.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\staticwebassets\GHC2.StaticWebAssets.Manifest.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\staticwebassets\GHC2.StaticWebAssets.xml
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\scopedcss\bundle\GHC2.styles.css
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.TagHelpers.input.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.TagHelpers.output.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorCoreGenerate.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Doctor.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\PatientRegistration.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Create.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Delete.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Details.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Edit.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Index.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Default.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\Components\DRegistration\Default.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorTargetAssemblyInfo.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorTargetAssemblyInfo.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Views.pdb
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.csproj.CopyComplete
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\ref\GHC2.dll
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.pdb
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.genruntimeconfig.cache
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\AddNewAnalyses.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\AddNewRadiation.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\AddPatientDiagnose.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetAppointment.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetDoctorPatientds.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetDoctors.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_DocotrsLayout.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientProfileWithNewDiagnose.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientProfileReadonly.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientDiagnoseDescription.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientAnalysesDetailsReadonly.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientRadiationsDetailsReadonly.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\AddPatientDiagnose1.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetAppointment.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetAppointmentProfile.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetDoctors.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetPatientAnalysesDetailsReadonly.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetPatientDiagnoseDescription.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetPatientProfileReadonly.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetPatientRadiationsDetailsReadonly.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AvailableTime.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_Patient.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\bin\Debug\net5.0\libman.json
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetAppointmentPatient.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_Layout1.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\Test.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\EditDoctorProfile.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetDoctorProfile.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\EditPatientProfile.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Chat.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\Components\Room\Default.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Indexx.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_ChatLayout.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\DoctorIndex.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\HomePage.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Create.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Delete.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Details.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Edit.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Index.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Create.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Delete.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Details.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Edit.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Index.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Create.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Delete.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Details.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Edit.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Index.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_HomeLayout.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout\_Header.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout\_LoginPartial.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout\_NavBar.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout\_SideBar.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\MyITI\Final Project\New version\New version 4-11\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\appsettings.json
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\libman.json
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.StaticWebAssets.xml
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.exe
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.deps.json
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.runtimeconfig.json
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.runtimeconfig.dev.json
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ref\GHC2.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.pdb
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.Views.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\GHC2.Views.pdb
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.Convention.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.Hosting.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.Runtime.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.csprojAssemblyReference.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.AssemblyInfo.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorAssemblyInfo.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\staticwebassets\GHC2.StaticWebAssets.Manifest.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\staticwebassets\GHC2.StaticWebAssets.xml
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\scopedcss\bundle\GHC2.styles.css
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.TagHelpers.input.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.TagHelpers.output.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorCoreGenerate.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Doctor.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\PatientRegistration.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Create.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Delete.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Details.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Edit.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Admins\Index.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\AddNewAnalyses.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\AddNewRadiation.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\AddPatientDiagnose.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\AddPatientDiagnose1.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\DoctorIndex.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\EditDoctorProfile.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetAppointment.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetDoctorPatientds.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetDoctorProfile.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetDoctors.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientAnalysesDetailsReadonly.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientDiagnoseDescription.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientProfileReadonly.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientProfileWithNewDiagnose.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\GetPatientRadiationsDetailsReadonly.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctors\Test.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Create.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Delete.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Details.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Edit.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Doctor\Index.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Chat.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Default.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\HomePage.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Indexx.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Create.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Delete.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Details.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Edit.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Medicine\Index.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Create.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Delete.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Details.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Edit.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patients\Index.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\EditPatientProfile.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetAppointment.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetAppointmentPatient.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetAppointmentProfile.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetDoctors.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetPatientAnalysesDetailsReadonly.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetPatientDiagnoseDescription.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetPatientProfileReadonly.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Patient\GetPatientRadiationsDetailsReadonly.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout\_Header.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout\_LoginPartial.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout\_NavBar.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout\_SideBar.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\AvailableTime.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\Components\DRegistration\Default.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\Components\Room\Default.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_ChatLayout.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_DocotrsLayout.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_HomeLayout.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_Layout1.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_Patient.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorTargetAssemblyInfo.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.RazorTargetAssemblyInfo.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Views.pdb
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.csproj.CopyComplete
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\ref\GHC2.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.pdb
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.genruntimeconfig.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\Razor\Views\Shared\_Culture.cshtml.g.cs
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\ar\GHC2.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\bin\Debug\net5.0\en\GHC2.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Resources.Views.Home.HomePage.ar.resources
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Resources.Views.Home.HomePage.en.resources
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Resources.Views.Shared._Culture.ar.resources
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Resources.Views.Shared._Culture.en.resources
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Resources.Views.Shared._HomeLayout.ar.resources
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Resources.Views.Shared._HomeLayout.en.resources
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Resources.Views.Shared._LoginPartial.ar.resources
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.Resources.Views.Shared._LoginPartial.en.resources
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\GHC2.csproj.GenerateResource.cache
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\ar\GHC2.resources.dll
+C:\Users\Lenovo\Downloads\GHC2-main29-4 V1 (1)\GHC2-main\GHC2\obj\Debug\net5.0\en\GHC2.resources.dll

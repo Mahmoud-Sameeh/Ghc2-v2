@@ -1,0 +1,279 @@
+﻿
+<div class="schedule-cont">
+    <div class="row">
+        <div class="col-md-12">
+            @*Time Slot*@
+            <div class="time-slot">
+                <ul class="clearfix">
+
+                    @*<li>
+                            @item.TimeOfDay
+                            @item
+                        </li>*@
+
+                    @*@if (Model.Count != 0)
+                        {*@
+
+                    <li>
+                        <a class="timing" href="#" id="A9" onclick="setTime('09:00:00')">
+                            <span>9:00</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A1045" onclick="setTime('10:45:00')">
+                            <span>10:45</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A1230" onclick="setTime('12:30:00')">
+                            <span>12:30</span> <span>PM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="timing" href="#" id="A915"onclick="setTime('09:15:00')">
+                            <span>9:15</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A11"onclick="setTime('11:00:00')">
+                            <span>11:00</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A1245"onclick="setTime('12:45:00')">
+                            <span>12:45</span> <span>PM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="timing" href="#" id="A930"onclick="setTime('09:30:00')">
+                            <span>9:30</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A1115" onclick="setTime('11:15:00')">
+                            <span>11:15</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A1"onclick="setTime('13:00:00')">
+                            <span>1:00</span> <span>PM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="timing" href="#" id="A945"onclick="setTime('09:45:00')">
+                            <span>9:45</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A1130"onclick="setTime('11:30:00')">
+                            <span>11:30</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A115"onclick="setTime('13:15:00')">
+                            <span>1:15</span> <span>PM</span>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a class="timing" id="A10"onclick="setTime('10:00:00')">
+                            <span>10:00</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="11451"onclick="setTime('11:45:00')">
+                            <span>11:45</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A1330"onclick="setTime('13:30:00')">
+                            <span>1:30</span> <span>PM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="timing" href="#" id="A1015"onclick="setTime('10:15:00')">
+                            <span>10:15</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A12"onclick="setTime('12:00:00')">
+                            <span>12:00</span> <span>PM</span>
+                        </a>
+                        <a class="timing" href="#" id="A145"onclick="setTime('13:45:00')">
+                            <span>1:45</span> <span>PM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="timing" href="#" id="A10301"onclick="setTime('10:30:00')">
+                            <span>10:30</span> <span>AM</span>
+                        </a>
+                        <a class="timing" href="#" id="A1215"onclick="setTime('12:15:00')">
+                            <span>12:15</span> <span>PM</span>
+                        </a>
+                        <a class="timing" href="#" id="A2"onclick="setTime('14:00:00')">
+                            <span>2:00</span> <span>PM</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            @* /Time Slot*@
+        </div>
+    </div>
+</div>
+
+@foreach (var item in Model)
+{
+
+    @if (item.TimeOfDay.ToString() == "09:00:00")
+    {
+        <script>
+            document.getElementById('A9').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "10:45:00")
+    {
+        <script>
+            document.getElementById('A1045').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "12:30:00")
+    {
+        <script>
+            document.getElementById('A1230').classList.add('selected');
+        </script>
+
+    }
+
+
+    @if (item.TimeOfDay.ToString() == "09:15:00")
+    {
+        <script>
+            document.getElementById('A915').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "11:00:00")
+    {
+        <script>
+            document.getElementById('A11').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "12:45:00")
+    {
+        <script>
+            document.getElementById('A1245').classList.add('selected');
+        </script>
+
+    }
+
+
+    @if (item.TimeOfDay.ToString() == "09:30:00")
+    {
+        <script>
+            document.getElementById('A930').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "11:15:00" )
+    {
+        <script>
+            document.getElementById('A1115').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "13:00:00" )
+    {
+        <script>
+            document.getElementById('A1').classList.add('selected');
+        </script>
+    }
+
+    @if (item.TimeOfDay.ToString() == "09:45:00" )
+    {
+        <script>
+            document.getElementById('A945').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "11:30:00")
+    {
+        <script>
+            document.getElementById('A1130').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "13:15:00")
+    {
+        <script>
+            document.getElementById('A115').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "10:00:00")
+    {
+
+        <script>
+            document.getElementById('A10').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "11:45:00")
+    {
+        <script>
+            document.getElementById('11451').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "13:30:00")
+    {
+        <script>
+            document.getElementById('A1330').classList.add('selected');
+        </script>
+
+    }
+
+
+    @if (item.TimeOfDay.ToString() == "10:15:00")
+    {
+        <script>
+            document.getElementById('A1015').classList.add('selected');
+        </script>
+
+    }
+
+
+    @if (item.TimeOfDay.ToString() == "12:00:00")
+    {
+        <script>
+            document.getElementById('A12').classList.add('selected');
+        </script>
+
+    }
+
+    @if (item.TimeOfDay.ToString() == "13:45:00")
+    {
+        <script>
+            document.getElementById('A145').classList.add('selected');
+        </script>
+
+    }
+
+
+    @if (item.TimeOfDay.ToString() == "10:30:00")
+    {
+        <script>
+            document.getElementById('A10301').classList.add('selected');
+        </script>
+
+    }
+
+
+    @if (item.TimeOfDay.ToString() == "12:15:00")
+    {
+        <script>
+            document.getElementById('A1215').classList.add('selected');
+        </script>
+    }
+
+    @if (item.TimeOfDay.ToString() == "14:00:00")
+    {
+        <script>
+            document.getElementById('A2').classList.add('selected');
+        </script>
+
+    }
+
+
+}

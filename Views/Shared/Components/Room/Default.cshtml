@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Chat>
+
+@foreach (var item in Model)
+{
+    var x = item.Name.Split('&');
+
+<li>
+    <a asp-controller="Home" asp-action="chat" asp-route-id="@item.Id">
+        <span class="chat-avatar-sm user-img">
+            <img src="assets/img/user.jpg" alt="" class="rounded-circle">
+            <span class="status online">
+            </span>
+        </span>
+        @if (User.Identity.Name == x[0])
+        {
+@x[1];
+
+        }
+        else
+        {
+@x[0];
+
+        }
+        <span class="badge badge-pill bg-danger float-right">!</span>
+    </a>
+</li>
+
+                @*<a class="room-btn" asp-controller="Home" asp-action="chat" asp-route-id="@item.Id">@item.Name</a>*@
+                }
+
+<a class="room-btn" id="create-room-btn" href="#"><strong>+</strong></a>

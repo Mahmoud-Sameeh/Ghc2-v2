@@ -1,0 +1,316 @@
+﻿@model VMIndex
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_DocotrsLayout.cshtml";
+}
+<script src="~/CustomFolder/docJs.js"></script>
+
+<div id="profileContainer" class="container-fluid" style="overflow:auto">
+    <div class="page-wrapper">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="dash-widget">
+                        <span class="dash-widget-bg1">
+                            <i class="fa fa-stethoscope"
+                               aria-hidden="true"></i>
+                        </span>
+                        <div class="dash-widget-info text-right">
+                            <h3>@ViewBag.TotalDoctorsCount</h3>
+                            <span class="widget-title1">
+                                Doctors <i class="fa fa-check"
+                                           aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="dash-widget">
+                        <span class="dash-widget-bg2"><i class="fa fa-user-o"></i></span>
+                        <div class="dash-widget-info text-right">
+                            <h3>@ViewBag.TotalPatientsCount</h3>
+                            <span class="widget-title2">
+                                Patients <i class="fa fa-check"
+                                            aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="dash-widget">
+                        <span class="dash-widget-bg3"><i class="fa fa-table" aria-hidden="true"></i></span>
+                        <div class="dash-widget-info text-right">
+                            <h3>@ViewBag.TotalAppoinmetsCount</h3>
+                            <span class="widget-title3">
+                                Total Appoint<i class="fa fa-check"
+                                                aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="dash-widget">
+                        <span class="dash-widget-bg2"><i class="fa fa-table" aria-hidden="true"></i></span>
+                        <div class="dash-widget-info text-right">
+                            <h3>@ViewBag.TodayAppoinmetsCount</h3>
+                            <span class="widget-title2">
+                               Today Appoint@*<i class="fa fa-check"
+                                                aria-hidden="true"></i>*@
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+
+
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                </div>
+            </div>
+                <div class="row  ">
+                    <!--  ---start news--------------------------------------------------------------------------------->
+                    <div class="col-lg-8">
+                        <div class="card" style="border: black 1px solid; margin-bottom: 20px; ">
+                            <div class="card-body" style="margin: -10px;border-radius: 15px;">
+                                <script type="text/javascript">
+                                    rssfeed_url = new Array();
+                                    rssfeed_url[0] = "https://www.medicinenet.com/rss/dailyhealth.xml";
+                                    rssfeed_frame_width = '100%';
+                                    rssfeed_frame_height = "510";
+                                    rssfeed_scroll = "on";
+                                    rssfeed_scroll_step = "6";
+                                    rssfeed_scroll_bar = "off";
+                                    rssfeed_target = "_blank";
+                                    rssfeed_font_size = "18";
+                                    rssfeed_font_face = "";
+                                    rssfeed_border = "off";
+                                    rssfeed_css_url = "";
+                                    rssfeed_title = "on";
+                                    rssfeed_title_name = "";
+                                    rssfeed_title_bgcolor = "#3366ff";
+                                    rssfeed_title_color = "#f5f6fa";
+                                    rssfeed_title_bgimage = "";
+                                    rssfeed_footer = "off";
+
+                                    rssfeed_footer_bgcolor = "#fff";
+                                    rssfeed_footer_color = "#333";
+                                    rssfeed_footer_bgimage = "";
+                                    rssfeed_item_title_length = "50";
+                                    rssfeed_item_title_color = "#000";
+                                    rssfeed_item_bgcolor = "";
+                                    rssfeed_item_bgimage = "";
+                                    rssfeed_item_border_bottom = "on";
+                                    rssfeed_item_source_icon = "off";
+                                    rssfeed_item_date = "off";
+                                    rssfeed_item_description = "on";
+                                    rssfeed_item_description_length = "120";
+                                    rssfeed_item_description_color = "#666";
+                                    rssfeed_item_description_link_color = "#333";
+                                    rssfeed_item_description_tag = "off";
+                                    rssfeed_no_items = "0";
+                                    rssfeed_cache = "14314cf3dad45052d9bb09bbb5bd5e6f";</script>
+                                <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+                                <!-----End news--------------------------------------------------------------------------------------  -->
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <!---Enter the to do list-->
+                        <div class="card grad" style="margin-top: 0px; border: black 1px solid;">
+                            <div class="card-body" style="padding:4px;">
+                                <!---------------------- start to do list ------------------ -->
+                                <div class="ToDo">
+                                    <div id="myDIV" class="header">
+                                        <h6 style="margin:5px">To Do List</h6>
+                                        <input type="text" id="myInput11" placeholder="Title...">
+                                        <span onclick="newElement()" class="addBtn">Add</span>
+                                    </div>
+
+                                    <ul id="myUL" class="ToDo">
+                                        <li>Hit the gym</li>
+                                        <li class="checked">Pay bills</li>
+                                        <li>Meet George</li>
+                                        <li>Buy eggs</li>
+                                        <li>Read a book</li>
+                                        <li>Organize office</li>
+                                    </ul>
+                                </div>
+                                <!---------------------- End to do list ------------------ -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- end row2--->
+
+                <div class="row ">
+                    <h5 style="color:darkblue">&nbsp;&nbsp;  Patient Appointment</h5>
+                    <div class="col-md-12">
+                        <div class="card table-responsive" style="border-radius:5px">
+                            <div class="card-header">
+                                <input type="button" id="btnUpcoming" onclick="ShowUpcoming()" class="btn btn-outline-primary" value="Upcoming" style="margin-left:30px; border-radius:15px;" />
+                                <input type="button" id="btnToday" onclick="ShowToDay()" class="btn btn-outline-primary" value="Today" style="margin-left:30px; border-radius:15px" />
+                            </div>
+                            <div class="card-body" id="UpcomingTable">
+                                <blockquote class="blockquote mb-0">
+                                    <table class="table table-striped " style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Patient Name</th>
+                                                <th>Appt Date</th>
+                                                <th>Appt Time</th>
+                                                <th>Accepted</th>
+                                                <th>#</th>
+                                                <th>#</th>
+                                                <th>#</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.UpcomingAppointments)
+                                            {
+                                                <tr style="margin:-10px">
+                                                    <td>
+                                                        <img src="@Url.Content(@item.Patient.ImageUrl)" class="rounded-circle TablePhoto" />
+                                                        &nbsp; @item.Patient.Name
+                                                    </td>
+                                                    <td>@item.AppointmetDateTime.ToShortDateString()</td>
+                                                    <td>@item.AppointmetDateTime.TimeOfDay</td>
+                                                    <td>@item.Accepted</td>
+                                                    <td>
+                                                        <a type="button" class="btn btn-primary text-center" asp-action="GetPatientProfileReadonly" asp-route-id="@item.PatientId" style="border-radius:4px;padding:4px;margin:auto">View Profile</a>
+                                                    </td>
+                                                    <td>
+                                                       
+                                                      
+                                                            <a type="button" asp-action="AcceptPatientAppointment"asp-route-id="@item.Id" class="btn btn-success" style="border-radius:4px;padding:4px " >Accept </a>
+                                                    
+                                                            </td>
+                                                    <td>
+                                                        <a type="button" asp-action="CanclePatientAppointment" asp-route-id="@item.Id" class="btn btn-danger" style="border-radius:4px;padding:4px ">Cancle</a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </blockquote>
+                            </div>
+                            <div class="card-body" id="TodayTable" style="display:none">
+                                <blockquote class="blockquote mb-0">
+                                    <table class="table table-striped " style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Patient Name</th>
+                                                <th>Appt Date</th>
+                                                <th>Appt Time</th>
+                                                <th>Accepted</th>
+                                                <th>#</th>
+                                                <th>#</th>
+                                                <th>#</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.ToDayAppointments)
+                                            {
+                                                <tr style="margin:-10px">
+                                                    <td>
+                                                        <img src="@Url.Content(@item.Patient.ImageUrl)" class="rounded-circle TablePhoto" />
+                                                        &nbsp; @item.Patient.Name
+                                                    </td>
+                                                    <td>@item.AppointmetDateTime.ToShortDateString()</td>
+                                                    <td>@item.AppointmetDateTime.TimeOfDay</td>
+                                                    <td>@item.Accepted</td>
+                                                    <td>
+                                                        @*  <a type="button" class="btn btn-primary text-center" asp-action="GetPatientProfileWithNewDiagnose" asp-route-id="@item.PatientId" style="border-radius:4px;padding:4px;margin:auto">Start Diagnose</a>*@
+                                                        <button type="button" class="btn btn-primary text-center bbb" style="border-radius:4px;padding:4px;margin:auto" id="@item.Patient.Nid" data-toggle="modal" data-target="#exampleModal">
+                                                            Start Diagnose
+                                                        </button>
+                                                    </td>
+                                                    @if (item.Accepted == "NO")
+                                                    {
+                                                        <td>
+                                                            <a type="button" asp-action="AcceptPatientAppointment" asp-route-id="@item.Id" class="btn btn-success" style="border-radius:4px;padding:4px ">Accept</a>
+                                                        </td>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <td>
+                                                            <input type="button" class="btn btn-success" value="Accept" style="border-radius:4px;padding:4px " disabled />
+                                                        </td>
+                                                    }
+                                                    <td>
+                                                        <a type="button" asp-action="CanclePatientAppointment" asp-route-id="@item.Id" class="btn btn-danger" style="border-radius:4px;padding:4px ">Cancle</a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                    @*  Modal*@
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Patient NID</h5>
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <input type="text" id="txtNID" class="form-control" placeholder="Enter NID OF Patient...">
+                                                    <div id="Erorr" style="display:none;color:red ;margin-left:5px">Enter valid NID for this Patient</div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary" id="btngo" onclick="GO()">Go</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var btnUpcoming = document.getElementById('btnUpcoming');
+                var btnToday = document.getElementById('btnToday');
+                var UpcomingTable = document.getElementById('UpcomingTable');
+                var TodayTable = document.getElementById('TodayTable');
+                function ShowToDay() {
+                    UpcomingTable.style.display = 'none';
+                    TodayTable.style.display = 'block';
+                    TodayTable.style.width = "100%"
+                }
+                function ShowUpcoming() {
+                    UpcomingTable.style.display = 'block';
+                    TodayTable.style.display = 'none';
+                    TodayTable.style.width = "100%"
+                }
+                var x;
+                $(".bbb").on('click', function (event) {
+                    document.getElementById("Erorr").style.display = "none";
+                    x = this.id;
+                    $('#txtNID').val("");
+                });
+                function GO() {
+
+                    var r = $('#txtNID').val();
+                    if (Number(r) === Number(x)) {
+                        document.getElementById("Erorr").style.display = "none";
+
+                        window.location.href = "GetPatientProfileWithNewDiagnose/" + r;
+                    }
+                    else {
+                        console.log("r" + r);
+                        document.getElementById("Erorr").style.display = "block";
+
+                        $('#txtNID').val("");
+                    }
+
+                }
+            </script>
+

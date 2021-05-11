@@ -1,0 +1,332 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@{ ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml"; }
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 img-fluid d-flex justify-content-center align-items-stretch position-relative">
+                @*<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>*@
+                <img src="~/nermen/img/gallery/gallery-5.jpg" style="width:90%;" />
+            </div>
+
+            <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                
+                <h3>@localizer["msg1"]</h3>
+                <p>@localizer["msg2"]</p>
+
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                    <h4 class="title"><a href="">@localizer["Health care level"]</a></h4>
+                    <p class="description">@localizer["String2"]</p>
+                </div>
+
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-gift"></i></div>
+                    <h4 class="title"><a href="">@localizer["Costs and prices"]</a></h4>
+                    <p class="description">@localizer["String3"]</p>
+                </div>
+
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-atom"></i></div>
+                    <h4 class="title"><a href="">@localizer["Scientific research"]</a></h4>
+                    <p class="description">@localizer["String4"]</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section><!-- End About Section -->
+<!-- ======= Counts Section ======= -->
+<section id="counts" class="counts">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="count-box">
+                    <i class="fas fa-user-md"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter">1000</span>
+                    <p>@localizer["doc"]</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                <div class="count-box">
+                    <i class="far fa-hospital"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter">10</span>
+                    <p>@localizer["dep"]</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                <div class="count-box">
+                    <i class="fas fa-flask"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter">500</span>
+                    <p>@localizer["research"]</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                <div class="count-box">
+                    <i class="fas fa-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter">100</span>
+                    <p>@localizer["awa"]</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Counts Section -->
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>@localizer["ser"]</h2>
+            <p>
+                @localizer["sermsg"]
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="icon-box" style="width:90%">
+                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4><a href="">@localizer["malh"]</a></h4>
+                    <p>@localizer["malp"] </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                <div class="icon-box" style="width:90%">
+                    <div class="icon"><i class="fas fa-pills"></i></div>
+                    <h4><a href="">@localizer["testh"]</a></h4>
+                    <p>@localizer["testp"] </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="icon-box" style="width:90%">
+                    <div class="icon"><i class="fas fa-hospital-user"></i></div>
+                    <h4><a href="">@localizer["hourh"]</a></h4>
+                    <p>@localizer["hourp"]</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" style="width:90%">
+                    <div class="icon"><i class="fas fa-dna"></i></div>
+                    <h4><a href="">@localizer["labh"]</a></h4>
+                    <p>@localizer["labp"] </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" style="width:90%">
+                    <div class="icon"><i class="fas fa-wheelchair"></i></div>
+                    <h4><a href="">@localizer["xh"]</a></h4>
+                    <p>@localizer["xp"]</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" style="width:90%">
+                    <div class="icon"><i class="fas fa-notes-medical"></i></div>
+                    <h4><a href="">@localizer["ambh"]</a></h4>
+                    <p>@localizer["ambp"]</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section> <!-- End Services Section -->
+<!-- ======= Departments Section ======= -->
+<section id="departments" class="departments">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>@localizer["dep"]</h2>
+            <p>@localizer["depp"]</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="nav nav-tabs flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">@localizer["Cardiology"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">@localizer["Neurology"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">@localizer["Hepatology"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">@localizer["Pediatrics"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-5">@localizer["Eye Care"]</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="tab-1">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>@localizer["deperh"]</h3>
+                                <p class="fst-italic">@localizer["deperp"]</p>
+                                <p>@localizer["deperpp"]</p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="~/nermen/img/departments-1.jpg" alt="" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-2">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>@localizer["deperh"]</h3>
+                                <p class="fst-italic">@localizer["deperp"]</p>
+                                <p>@localizer["deperpp"]</p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="~/img/departments-2.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-3">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>@localizer["deperh"]</h3>
+                                <p class="fst-italic">@localizer["deperp"]</p>
+                                <p>@localizer["deperpp"]</p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="~/img/departments-3.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-4">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>@localizer["deperh"]</h3>
+                                <p class="fst-italic">@localizer["deperp"]</p>
+                                <p>@localizer["deperpp"]</p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="~/img/departments-4.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-5">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>@localizer["deperh"]</h3>
+                                <p class="fst-italic">@localizer["deperp"]</p>
+                                <p>@localizer["deperpp"]</p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="~/img/departments-5.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End Departments Section -->
+<!-- ======= Doctors Section ======= -->
+<section id="doctors" class="doctors">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>@localizer["doc"]</h2>
+            <p>@localizer["docp"]</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="member d-flex align-items-start">
+                    <div class="pic"><img src="~/nermen/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>@localizer["john daly"]</h4>
+                        <span>@localizer["pediatrician"]</span>
+                        <p>@localizer["Chiefp"]</p>
+                            <div class="social">
+                                <a href=""><i class="ri-twitter-fill"></i></a>
+                                <a href=""><i class="ri-facebook-fill"></i></a>
+                                <a href=""><i class="ri-instagram-fill"></i></a>
+                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                            </div>
+</div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member d-flex align-items-start">
+                    <div class="pic"><img src="~/nermen/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                       
+                        <h4>@localizer["Sarah Jhonson"]</h4>
+                        <span>@localizer["Anesthesiologist"]</span>
+                        <p>@localizer["Neurosurgeonp"]</p>
+                        <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start">
+                    <div class="pic"><img src="~/nermen/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        
+                        <h4>@localizer["William Anderson"]</h4>
+                        <span>@localizer["Ophthalmologist"]</span>
+                        <p>@localizer["Chiefp"]</p>
+                        <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start">
+                    <div class="pic"><img src="~/nermen/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                       
+                        <h4>@localizer["Amanda Jepson"]</h4>
+                        <span>@localizer["Neurosurgeon"]</span>
+                        <p>@localizer["Neurosurgeonp"]</p>
+                        <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Doctors Section -->

@@ -1,0 +1,116 @@
+﻿@model VMPatientAppointment
+@{
+    ViewData["Title"] = "GetAppointment";
+    Layout = "~/Views/Shared/_DocotrsLayout.cshtml";
+}
+
+<br />
+<h5 style="color:gray">My Appointments</h5>
+<br />
+@*<div class="row">
+    <div class="col-sm-4 input-group" style="margin-left:20px ;min-width:400px;max-width:400px">
+        <input type="text" class="form-control" placeholder="Search using patient name">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+
+</div>*@
+<br />
+<!-- Button trigger modal -->
+
+<div class="row ">
+    @foreach (var item in Model.Appointments)
+    {
+        <div class="col-lg-3 col-md-3 col-sm-2" style="max-width:350px; margin:auto;min-width:300px;">
+            <div class="card doctorsCard" style=" border-top: 2px solid green; border-radius: 5px">
+                <img class="  rounded-circle CardPhotoPatients" src="@Url.Content(@item.Patient.ImageUrl)" alt="Card image cap">
+                <a href="#" style="text-align:center; margin-top:-30px;margin-bottom:15px">@item.Patient.Name</a>
+                <div class="card-body " style="margin-top: -30px;">
+                    <hr class="doctorsCardHr">
+                    <ul>
+                        <li>@item.Patient.Phone</li>
+                        <li>@item.AppointmetDateTime.ToShortDateString()</li>
+                        <li>@item.AppointmetDateTime.ToShortTimeString()</li>
+                        @if (item.Accepted == "NO")
+                        {
+                            <li> Accepted:<span style="color:red">&nbsp;&nbsp; @item.Accepted</span> </li>
+                        }
+                        else
+                        {
+                            <li> Accepted:<span style="color:green"> &nbsp;&nbsp;@item.Accepted</span> </li>
+
+                        }
+
+
+                    </ul>
+                    <hr class="doctorsCardHr">
+                    <div style="padding-left:25px">
+                        <button type="button" class="btn btn-primary bbb" id="@item.Patient.Nid" data-toggle="modal" data-target="#exampleModal">
+                            Start Diagnose
+                        </button>
+                        @*  <a type="button" class="btn btn-primary text-center" asp-action="GetPatientProfileWithNewDiagnose" asp-route-id="@item.PatientId" style="border-radius:4px;padding:4px;margin:auto">Start Diagnose</a>*@
+                        <a type="button" asp-action="DeletePatientAppointment" asp-route-id="@item.Id" class="btn btn-danger text-center " value="Cancel" style="border-radius:4px;padding:4px; margin:auto ">Delete</a>
+                    </div>
+                    @*<hr class="doctorsCardHr">*@
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+
+    }
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Patient NID</h5>
+
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="txtNID" class="form-control" placeholder="Enter NID OF Patient...">
+                    <div id="Erorr" style="display:none;color:red ;margin-left:5px">Enter valid NID for this Patient</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="btngo" onclick="GO()">Go</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="~/CustomFolder/vendor/jquery/jquery.js"></script>
+<script>
+    var x;
+    $(".bbb").on('click', function (event) {
+        document.getElementById("Erorr").style.display = "none";
+        x = this.id;
+        $('#txtNID').val("");
+    });
+    function GO() {
+
+        var r = $('#txtNID').val();
+        if (Number(r) === Number(x)) {
+            document.getElementById("Erorr").style.display = "none";
+         
+            window.location.href = "GetPatientProfileWithNewDiagnose/" + r;
+        }
+        else {
+            console.log("r" + r);
+            document.getElementById("Erorr").style.display = "block";
+
+            $('#txtNID').val("");
+        }
+
+    }
+   
+   
+ 
+
+</script>

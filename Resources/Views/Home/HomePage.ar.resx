@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Amanda Denyl" xml:space="preserve">
+    <value>أماندا دينيل</value>
+  </data>
+  <data name="Amanda Jepson" xml:space="preserve">
+    <value>أماندا جيبسون</value>
+  </data>
+  <data name="ambh" xml:space="preserve">
+    <value>سيارة الاسعاف</value>
+  </data>
+  <data name="ambp" xml:space="preserve">
+    <value>يمكننا أن نأخذك بسرعة</value>
+  </data>
+  <data name="Anesthesiologist" xml:space="preserve">
+    <value>طبيب التخدير</value>
+  </data>
+  <data name="awa" xml:space="preserve">
+    <value>الجوائز</value>
+  </data>
+  <data name="Cardiology" xml:space="preserve">
+    <value>أمراض القلب و الأوعية الدموية</value>
+  </data>
+  <data name="Chief" xml:space="preserve">
+    <value>كبير المسؤولين الطبيين</value>
+  </data>
+  <data name="Chiefp" xml:space="preserve">
+    <value>دكتور ورئيس قسم</value>
+  </data>
+  <data name="Costs and prices" xml:space="preserve">
+    <value>التكاليف والاسعار</value>
+  </data>
+  <data name="dep" xml:space="preserve">
+    <value>الاقسام</value>
+  </data>
+  <data name="deperh" xml:space="preserve">
+    <value>عيادة القلب تحت إشراف نخبة من استشاري القلب </value>
+  </data>
+  <data name="deperp" xml:space="preserve">
+    <value>لتشخيص أمراض القلب بكفاءة وتقديم العلاج اللازم لأمراض القلب، تستقبل مستشفي عين شمس التخصصي جميع حالات أمراض القلب مثل حالات الجلطات الحادة وهبوط عضلة القلب واعتلال ضربات القلب الخبيثة كما تقدم كل الخدمات المطلوبة لهذة الحالات مثل:</value>
+  </data>
+  <data name="deperpp" xml:space="preserve">
+    <value>القسطرة العلاجية الطارئة لحالات الجلطات على مدار الساعة.
+تركيب الأجهزة الحديثة لعلاج ضعف عضلة القلب مثل (CRT)، أو لعلاج اعتلال ضربات القلب مثل اجهزة المنظمات وأجهزة الصدمات الخارجية.
+الرعاية الطبية الكاملة للحالات الحرجة للقلب وما يلزمها من إجراءات عاجلة مثل تركيب البالون الاورطية او منظم مؤقت لضربات القلب أو بذل الغشاء التاموري للقلب.</value>
+  </data>
+  <data name="depp" xml:space="preserve">
+    <value>لدينا جميع الاقسام بكل التخصصات مجهزة علي اعلي مستوي</value>
+  </data>
+  <data name="Designed by" xml:space="preserve">
+    <value>مصصم بواسطة</value>
+  </data>
+  <data name="doc" xml:space="preserve">
+    <value>الدكاترة</value>
+  </data>
+  <data name="docp" xml:space="preserve">
+    <value>لدينا فريق من أفضل الأطباء</value>
+  </data>
+  <data name="Eye Care" xml:space="preserve">
+    <value>قسم العيون</value>
+  </data>
+  <data name="Health care level" xml:space="preserve">
+    <value>مستوي الرعاية الطبية</value>
+  </data>
+  <data name="Hepatology" xml:space="preserve">
+    <value>أمراض الكبد</value>
+  </data>
+  <data name="hourh" xml:space="preserve">
+    <value>دعم 24 ساعة</value>
+  </data>
+  <data name="hourp" xml:space="preserve">
+    <value>نقدم الخدمة لمدة 24 ساعة في جميع الأيام</value>
+  </data>
+  <data name="john daly" xml:space="preserve">
+    <value>جون دالي</value>
+  </data>
+  <data name="labh" xml:space="preserve">
+    <value>معمل</value>
+  </data>
+  <data name="labp" xml:space="preserve">
+    <value>لدينا معمل جيد لفحص بدقة</value>
+  </data>
+  <data name="malh" xml:space="preserve">
+    <value>استشاري طبي</value>
+  </data>
+  <data name="malp" xml:space="preserve">
+    <value>يمكنك التحقق من صحتك عن طريق المستشار</value>
+  </data>
+  <data name="msg1" xml:space="preserve">
+    <value>الأشخاص الذين تثق بهم الرعاية التي تستحقها</value>
+  </data>
+  <data name="msg2" xml:space="preserve">
+    <value>يوفر نظام الرعاية الصحية المتكامل لدينا رعاية استثنائية   نحن نجمع بين أحدث التقنيات والنهج الشخصي الداعم الذي يمثل السمة المميزة لنا</value>
+  </data>
+  <data name="Neurology" xml:space="preserve">
+    <value>الأعصاب</value>
+  </data>
+  <data name="Neurosurgeon" xml:space="preserve">
+    <value>جراح الأعصاب</value>
+  </data>
+  <data name="Neurosurgeonp" xml:space="preserve">
+    <value>دكتور  المخ والاعصاب بمستشفي عين شمس</value>
+  </data>
+  <data name="Ophthalmologist" xml:space="preserve">
+    <value>طبيب عيون</value>
+  </data>
+  <data name="pediatrician" xml:space="preserve">
+    <value>طبيب اطفال</value>
+  </data>
+  <data name="Pediatrics" xml:space="preserve">
+    <value>قسم الاطفال</value>
+  </data>
+  <data name="research" xml:space="preserve">
+    <value>معامل البحث</value>
+  </data>
+  <data name="Sarah Jhonson" xml:space="preserve">
+    <value>سارة جونسون</value>
+  </data>
+  <data name="Scientific research" xml:space="preserve">
+    <value>الابحاث العملية</value>
+  </data>
+  <data name="ser" xml:space="preserve">
+    <value>خدماتنا</value>
+  </data>
+  <data name="sermsg" xml:space="preserve">
+    <value>نقدم خدمة كاملة لأي شخص يحتاج إلى التحقق من صحته ، ونقدم بعض الخدمات وسنكون سعداء بمساعدتك.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>أمراض القلب و الأوعية الدموية</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>وفير الرعاية الصحية للمجتمع المصري بصفة عامة و مجتمع جامعة عين شمس بصفة خاصة (و يشمل أعضاء هيئة التدريس بالجامعة – و الطلبة و موظفي الجامعة)على أن تكون الرعاية متكاملة و على أعلى مستوى من الجودةو بأحدث</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>توفير خدمات الرعاية الصحية وفقاً للمعايير الدولية للجودة بأسعار متوسطة بدلاً عن السفر إلى الخارج بأسعار باهظة حيث أن  المستشفى التخصصي ليست منشأة بهدف الربح و لكن تم إنشاؤها معتمدة على التمويل الذاتي.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>توفر الخدمات التدريبية و الدراسية لمرحلة ما بعد التخرج كما تساهم في نشر العلم و الخدمات البحثية لجميع الفئات بالجامعة و تشمل الأطباء و الهيئة الفنية و الهندسة الطبية – هيئة التمريض وتكنولوجيا المعلومات ... إلخ.</value>
+  </data>
+  <data name="testh" xml:space="preserve">
+    <value>اختبار طبي</value>
+  </data>
+  <data name="testp" xml:space="preserve">
+    <value>لدينا معمل جيد</value>
+  </data>
+  <data name="William Anderson" xml:space="preserve">
+    <value>وليام أندرسون</value>
+  </data>
+  <data name="xh" xml:space="preserve">
+    <value>اكس راي</value>
+  </data>
+  <data name="xp" xml:space="preserve">
+    <value>لدينا اشعة اكس راي جيدة لنكون آمنين معها</value>
+  </data>
+</root>

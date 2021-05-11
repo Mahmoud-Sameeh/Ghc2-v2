@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "GetAppointmentProfile";
+    Layout = "~/Views/Shared/_Patient.cshtml";
+}
+
+<div class="row ">
+    <h5 style="color:darkblue">&nbsp;&nbsp;  MyAppointments</h5>
+    <div class="col-md-12">
+        <div class="card table-responsive" style="border-radius:5px">
+            
+            <div class="card-body" id="UpcomingTable">
+                <blockquote class="blockquote mb-0">
+                    <table class="table table-striped " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Appt Date</th>
+                                <th>Booking Date</th>
+                                <th>Follow up</th>
+                                <th>Status</th>
+                                <th>#</th>
+                               
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                                <tr style="margin:-10px">
+                                    <td>
+                                        <img src="" class="rounded-circle TablePhoto" />
+                                        &nbsp;
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                       
+                                    <td>
+                                        <a type="button" asp-action="AcceptPatientAppointment" asp-route-id="" class="btn btn-primary" style="border-radius:4px;padding:4px ">View</a>
+                                    </td>
+                                    
+                                </tr>
+                          
+                        </tbody>
+                    </table>
+                </blockquote>
+            </div>
+          
+            </div>
+        </div>
+    </div>

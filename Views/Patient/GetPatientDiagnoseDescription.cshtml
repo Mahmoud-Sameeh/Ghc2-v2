@@ -1,0 +1,177 @@
+﻿@model VMPatientDiagnosePrescription
+@{
+    ViewData["Title"] = "GetPatientProfileReadonly";
+    Layout = "~/Views/Shared/_Patient.cshtml";
+}
+
+<div class="row ">
+    <div class="col-md-12">
+    </div>
+</div>
+<div class="container bcontent">
+    <h5 style=" color:gray">&nbsp;&nbsp;  Diagnose Details </h5>
+    <div class="card" style="width: 100%;margin:auto ;border-top:2px solid green">
+        <div class="row no-gutters">
+            <div class="col-md-2">
+                <img class="card-img  rounded-circle CardPhotoPatients text-center" style="margin-left:30%" src="@Url.Content(Model.patient.ImageUrl)" alt="Suresh Dasari Card">
+            </div>
+            <div class=" col-md-9 ml-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-2">
+                                <label for="name">Name:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Patient Name" aria-label="Name" value="@Model.patient.Name" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="age">Birthdate:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Age" aria-label="Age" value="@Model.patient.BitrhDate.Date" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="Address">Address:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Address" aria-label="Address" value="@Model.patient.Address" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+
+                                <div class="form-check">
+                                    <label for="Gender" class="mr-5">Gender:</label>
+                                    @{ if (Model.patient.Gender.ToLower() == "male")
+                                        {<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Male
+                                            </label>
+                                        }
+                                        else
+                                        {
+
+                                            <input class="form-check-input ml-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                            <label class="form-check-label ml-4" for="flexRadioDefault1">
+                                                Female
+                                            </label>
+                                        }
+                                    }
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class=" col-md-6">
+                            <div class="form-group mb-2">
+                                <label for="Phone">Phone:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" value="@Model.patient.Phone" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="Bloodgroup">BloodGroup:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="BloodGroup" aria-label="BloodGroup" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="email">Email:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" value="@Model.patient.Email" readonly>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="container bcontent">
+    <h5 style=" color:gray">&nbsp;&nbsp;   Diagnose Description </h5>
+    <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+        <div class="row mb-3 mt-2">
+
+
+
+            <div class="form-group" style="width:95%;margin:auto">
+
+                <textarea class="form-control" placeholder="Write Diagnose Description" id="floatingTextarea2" style="height: 100px" readonly>@Model.diagnose.DiagnoseDescription</textarea>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="container bcontent">
+    <h5 style=" color:gray">&nbsp;&nbsp;   Prescription </h5>
+    <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+        <div class="row no-gutters">
+            @*<div class="row ">
+                <h5 style="color:darkblue">&nbsp;&nbsp; prescription </h5>*@
+
+            <div class="col-md-12">
+                <div class="card table-responsive" style="border-radius:5px;border-top:2px solid green">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <table class="table table-striped " style="width:100%">
+                                <thead>
+
+                                    <tr>
+                                        <th>Medicine Name</th>
+                                        <th>Dose</th>
+                                        <th colspan="2">Note</th>
+
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.PrescriptionMedicine)
+                                    {
+                                        <tr style="margin:-10px">
+                                            <td>@Model.medicines.Where(e => e.Id == item.MedicineId).Select(e => e.Name).FirstOrDefault()</td>
+                                            <td>@item.Dose</td>
+                                            <td>@item.Note</td>
+                                        </tr>
+
+                                    }
+
+                                </tbody>
+                            </table>
+
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<br />
+<div class="container bcontent">
+    <div class="card" style="width: 100%;margin:auto;border-top:2px solid green">
+        <div class="row no-gutters">
+            <div class="row" style="width:100%;margin-top:20px">
+                <div class="row mr-4 ml-4" style="width:100%;margin:5px auto; ">
+
+                    <label for="Note">Needed Radiations:</label>&nbsp;&nbsp;
+
+                    <input type="text" class="form-control" placeholder="Write Your Need" id="floatingTextarea2" style="height: 50px;width:100%" value="@Model.diagnose.RequiredRadiation" readonly>
+
+
+
+                </div>
+                <div class="row mr-4 ml-4" style="width:100%;margin:5px auto; ">
+
+                    <label for="Note"> Needed Analyses:</label>&nbsp;&nbsp;
+
+                    <input type="text" class="form-control" placeholder="Write Your Need" id="floatingTextarea2" style="height: 50px;width:100%" value="@Model.diagnose.RequiredAnalyses" readonly>
+
+
+                </div>
+                @*<div style=" width:100%;margin-bottom:10px;margin-left:250px;margin-top:20px">
+                            <input type="button" class="btn btn-outline-danger mb-2 float-right" value=" Close " style=" border-radius:4px;padding:4px;width:100px;margin-right:10px" />
+
+                        <div style=" width:100%;margin-bottom:10px;margin-left:250px;margin-top:20px">
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+    </div>

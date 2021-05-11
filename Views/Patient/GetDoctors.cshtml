@@ -1,0 +1,66 @@
+﻿@model List<Doctor>
+@{
+    ViewData["Title"] = "GetDoctors";
+    Layout = "~/Views/Shared/_Patient.cshtml";
+}
+
+<br />
+<h5 style="color:gray">Doctors</h5>
+<br />
+@*<div class="row">
+    <div class=" col-sm-4 input-group" style="margin-left:70px ;min-width:400px;max-width:400px; ">
+        <input type="text" class="form-control" placeholder="Search using Doctor name">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+
+</div>*@
+<br />
+@foreach (var item in Model)
+{
+    <div class="container bcontent" >
+        <div class="card" style="width: 90%;margin:auto ">
+            <div class="row no-gutters"style=" border-top: 2px solid #3498db;border-radius:5px">
+                <div class="col-md-2">
+                    <img class="card-img  rounded-circle CardPhotoPatients" style="margin-left:30%" src="@Url.Content(@item.ImageUrl)" alt="Suresh Dasari Card">
+                </div>
+                <div class="offset-1 col-md-9">
+                    <div class="card-body">
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>@item.Name</li>
+                                    <li>@item.BitrhDate.Value.ToShortDateString()</li>
+                                    
+                                    <li>@item.Email</li>
+
+                                </ul>
+                            </div>
+                            <div class=" col-md-6">
+                                <ul>
+                                    <li>@item.Address</li>
+                                    <li>@item.Phone</li>
+                                    <li>@item.Gender</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row" style="float:right;margin-top:-25px">
+                            <a asp-action="GetAppointment" asp-route-id="@item.Nid" class="btn btn-primary" style="float:right;width:120px;margin-right:1px">Book</a>
+
+                            <a type="button" class="btn btn-primary text-center" asp-controller="home" asp-action="CreateRoomautopatient" asp-route-name="@item.Name" style="border-radius:4px;padding:4px;margin:auto;margin-left:10px; width:120px;height:40px"><i class="fab fa-facebook-messenger"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+}
+
+

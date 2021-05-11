@@ -1,0 +1,93 @@
+﻿@model GetPatientAppointmentsWithDoctors
+@{
+    ViewData["Title"] = "GetAppointmentPatient";
+    Layout = "~/Views/Shared/_Patient.cshtml";
+}
+<style>
+    .status {
+        background-color: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+    }
+
+    .custom-badge {
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 12px;
+        min-width: 95px;
+        padding: 1px 10px;
+        text-align: center;
+    }
+
+    .status-red,
+    a.status-red {
+        background-color: #ffe5e6;
+        border: 1px solid #fe0000;
+        color: #fe0000;
+    }
+
+    .status-green,
+    a.status-green {
+        background-color: #e5faf3;
+        border: 1px solid #00ce7c;
+        color: #00ce7c;
+    }
+
+</style>
+<div class="row ">
+    <h5 style="color:darkblue">&nbsp;&nbsp;  MyAppointments</h5>
+    <div class="col-md-12">
+        <div class="card table-responsive" style="border-radius:5px">
+            
+            <div class="card-body" id="UpcomingTable">
+                <blockquote class="blockquote mb-0">
+                    <table class="table table-striped " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Appt Date</th>
+                                <th>Appt Time</th>
+                                <th>Accepted</th>
+                               
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.appointments)
+                            {
+                                <tr style="margin:-10px">
+                                    <td>
+
+                                        <img src="@Url.Content(@item.Doc.ImageUrl)" class="rounded-circle TablePhoto" />
+                                        &nbsp;
+                                        @item.Doc.Name
+                                    </td>
+                                    <td>@item.AppointmetDateTime.Date.ToShortDateString()</td>
+                                    <td>@item.AppointmetDateTime.TimeOfDay</td>
+                                    <td>
+                                        @if (item.Accepted== "Yes")
+                                        {
+                                            <span class="custom-badge status-green">Accepted</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="custom-badge status-red">Not Accepted</span>
+                                        }
+                                    </td>
+                                
+                                </tr>
+                            }
+
+
+                        </tbody>
+                        </table>
+                </blockquote>
+            </div>
+          
+            </div>
+        </div>
+    </div>
+

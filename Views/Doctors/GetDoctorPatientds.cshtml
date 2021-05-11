@@ -1,0 +1,57 @@
+﻿@model VMPatientDiagnose
+@{
+    ViewData["Title"] = "GetDoctorPatientds";
+    Layout = "~/Views/Shared/_DocotrsLayout.cshtml";
+}
+
+<br />
+<h5 style="color:gray">My Patients</h5>
+<br />
+@*<div class="row">
+    <div class="col-sm-4 input-group" style="margin-left:20px ;min-width:400px;max-width:400px">
+        <input type="text" class="form-control" placeholder="Search using patient name">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+
+</div>*@
+<br />
+
+<div class="row ">
+    @foreach (var item in Model.Diagnoses)
+    {
+        <div class="col-lg-3 col-md-3 col-sm-2" style="max-width:350px; margin:auto;min-width:300px;">
+            <div class="card doctorsCard" style=" border-top: 2px solid #3498db; border-radius: 5px">
+                <img class="  rounded-circle CardPhotoPatients" src="@Url.Content(@item.Patient.ImageUrl)" alt="Card image cap">
+                <a href="#" style="text-align:center; margin-top:-30px;margin-bottom:15px">@item.Patient.Name</a>
+                <div class="card-body " style="margin-top: -30px;">
+                    <hr class="doctorsCardHr">
+                    <ul>
+                        <li>@item.Patient.Phone</li>
+                        <li>@item.Patient.Address</li>
+                        <li>@item.Patient.Email</li>
+
+
+                    </ul>
+                    <hr class="doctorsCardHr">
+                    <div class="text-center">
+                        <a type="button" class="btn btn-primary text-center" asp-action="GetPatientProfileReadonly" asp-route-id="@item.PatientId" style="border-radius:4px;padding:4px;margin:auto">View Profile</a>
+                        <a type="button" class="btn btn-primary text-center"
+                           asp-controller="home"
+                           asp-action="CreateRoomauto"
+                           asp-route-name="@item.Patient.Name"
+                           style="border-radius:4px;padding:4px;margin:auto">Chat</a>
+                        @* <input type="button" class="btn btn-primary text-center "  value=" View Profile" style=" border-radius:4px;padding:4px;margin:auto" />*@
+                        @* <input type="button" class="btn btn-danger text-center " value="Delete" style="border-radius:4px;padding:4px; margin:auto " />*@
+                    </div>
+                    @*<hr class="doctorsCardHr">*@
+
+                </div>
+            </div>
+        </div>
+    }
+</div>

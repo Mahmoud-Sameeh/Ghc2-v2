@@ -1,0 +1,252 @@
+﻿  @model VMPatientProfile
+@{
+    ViewData["Title"] = "GetPatientProfileWithNewDiagnose";
+    Layout = "~/Views/Shared/_DocotrsLayout.cshtml";
+}
+
+<br />
+<h4 style="color:gray;font-family:'Times New Roman'">Patient Profile</h4>
+<br />
+<div class="container bcontent">
+    <div class="card" style="width: 100%;margin:auto;border-top:4px solid gray">
+        <div class="row no-gutters">
+            <div class="col-md-2">
+                <img class="card-img  rounded-circle CardPhotoPatients" style="margin-left:30%" src="@Url.Content( @Model.patient.ImageUrl)" alt="Suresh Dasari Card">
+               
+                
+            </div>
+            <div class=" col-md-9 ml-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-2">
+                                <label for="name">Name</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Patient Name" aria-label="Name" value="@Model.patient.Name" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="BirthDate">Birth Date</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="BirthDate" aria-label="Age" value="@Model.patient.BitrhDate.Date" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="Address">Address:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Address" value="@Model.patient.Address" aria-label="Address" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+
+                                <div class="form-check">
+                                    <label for="Gender" class="mr-5">Gender:</label>
+                                    @{ if (Model.patient.Gender.ToLower() == "male")
+                                        {<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Male
+                                            </label>
+                                        }
+                                        else
+                                        {
+
+                                            <input class="form-check-input ml-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                            <label class="form-check-label ml-4" for="flexRadioDefault1">
+                                                Female
+                                            </label>
+                                        }
+                                    }
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class=" col-md-6">
+                            <div class="form-group mb-2">
+                                <label for="Phone">Phone</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" value="@Model.patient.Phone" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="Bloodgroup">BloodGroup:</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="BloodGroup" aria-label="BloodGroup"value="@Model.patient.BloodGroup" readonly>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="email">Email</label>&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" value="@Model.patient.Email" readonly>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="row ">
+
+    @*Add Diagnose buttons*@
+    @if (Model.LogedInDoctor.Specialty == "Radiation")
+    {<div style=" width:97%;margin-bottom:5px">
+            <a type="button" asp-action="AddNewRadiation" asp-route-id="@Model.patient.Nid" class="btn btn-primary float-right" style=" border-radius:4px;padding:4px;margin-bottom:-15px">Add new Radiation</a>
+        </div>
+
+    }
+    else if (Model.LogedInDoctor.Specialty == "Analyses")
+    {
+        <div style=" width:97%;margin-bottom:5px">
+            <a type="button" asp-action="AddNewAnalyses" asp-route-id="@Model.patient.Nid" class="btn btn-primary float-right" style=" border-radius:4px;padding:4px;margin-bottom:-15px">Add new analyse</a>
+        </div>
+    }
+    else
+    {
+        <div style=" width:97%;margin-bottom:5px">
+            <a type="button" asp-action="AddPatientDiagnose" asp-route-id="@Model.patient.Nid" class="btn btn-primary float-right" style=" border-radius:4px;padding:4px;margin-bottom:-15px">Add new Diagnose </a>
+        </div>
+    }
+
+    @*End diagnoses buttons*@
+    <h5 style="color:gray" class="ml-2">Sick history</h5>
+    <div class="col-md-12 container">
+        <div class="card table-responsive" style="border-radius:5px">
+            <div class="card-header" style="border-top: 4px solid gray">
+                <input type="button" id="btnShowDiagnoses" onclick="ShowDiagnoses()" class="btn btn-outline-primary" value="Diagnoses" style="padding: 4px; margin-left: 30px; border-radius: 10px " />
+                <input type="button" id="btnShowRadiations" onclick="ShowRadiations()" class="btn btn-outline-primary" value="Radiations" style="padding: 4px; margin-left: 30px; border-radius: 10px" />
+                <input type="button" id="btnShowAnalyses" onclick="ShowAnalyses()" class="btn btn-outline-primary" value="Analyses" style="padding:4px;margin-left:30px; border-radius:10px" />
+            </div>
+
+            <div class="card-body " id="DiagnoseTBl">
+                <blockquote class="blockquote mb-0">
+                    <table class="table table-striped " style="width:100%">
+                        <thead>
+
+                            <tr>
+                                <th>Diagnose speciality</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Doctor Name</th>
+                                <th>Doctor phone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Diagnoses)
+                            {
+
+
+                                <tr style="margin:-10px">
+                                    <td> @item.Doc.Specialty </td>
+                                    <td>@item.DiagnoseDateTime.Date.ToShortDateString()</td>
+                                    <td>@item.DiagnoseDateTime.TimeOfDay</td>
+                                    <td>
+                                        <img src="@Url.Content(@item.Doc.ImageUrl)" class="rounded-circle TablePhoto" alt="Alternate Text" />
+                                        &nbsp; @item.Doc.Name
+                                    </td>
+                                    <td> @item.Doc.Phone</td>
+                                    <td>
+                                        <a type="button" class="btn btn-primary" asp-action="GetPatientDiagnoseDescription" asp-route-id="@item.Id" style=" border-radius:4px;padding:4px">Show</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </blockquote>
+            </div>
+            <div class="card-body" id="RadiationsTBl" style="display:none">
+                <blockquote class="blockquote mb-0">
+                    <table class="table table-striped " style="width:100%">
+                        <thead>
+
+                            <tr>
+                                <th>Radiation type</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Doctor Name</th>
+                                <th>Doctor phone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Radiations)
+                            {
+
+
+                                <tr style="margin:-10px">
+                                    <td> @item.Type </td>
+                                    <td>@item.DateAndTime.Date.ToShortDateString()</td>
+                                    <td>@item.DateAndTime.TimeOfDay</td>
+                                    <td>
+                                        <img src="@Url.Content(@item.Doc.ImageUrl)" class="rounded-circle TablePhoto" alt="Alternate Text" />
+                                        &nbsp; @item.Doc.Name
+                                    </td>
+                                    <td> @item.Doc.Phone</td>
+                                    <td>
+                                        <a type="button" class="btn btn-primary" asp-action="GetPatientRadiationsDetailsReadonly" asp-route-id="@item.Id" style=" border-radius:4px;padding:4px">Show</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </blockquote>
+            </div>
+            <div class="card-body" id="AnalysesTBl" style="display:none">
+                <blockquote class="blockquote mb-0">
+                    <table class="table table-striped " style="width:100%">
+                        <thead>
+
+                            <tr>
+                                <th>Analyses Type</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Doctor Name</th>
+                                <th>Doctor phone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Analyses)
+                            {
+
+
+                                <tr style="margin:-10px">
+                                    <td> @item.Type </td>
+                                    <td>@item.DateAndTime.Date.ToShortDateString()</td>
+                                    <td>@item.DateAndTime.TimeOfDay</td>
+                                    <td>
+                                        <img src="@Url.Content(@item.Doc.ImageUrl)" class="rounded-circle TablePhoto" alt="Alternate Text" />
+                                        &nbsp; @item.Doc.Name
+                                    </td>
+                                    <td> @item.Doc.Phone</td>
+                                    <td>
+                                        <a type="button" class="btn btn-primary" asp-action="GetPatientAnalysesDetailsReadonly" asp-route-id="@item.Id" style=" border-radius:4px;padding:4px">Show</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var DiagnosesTBl = document.getElementById('DiagnoseTBl');
+    var RadiationsTBl = document.getElementById('RadiationsTBl');
+    var AnalysesTBl = document.getElementById('AnalysesTBl');
+    function ShowDiagnoses() {
+        AnalysesTBl.style.display = 'none';
+        RadiationsTBl.style.display = 'none';
+        DiagnosesTBl.style.display = 'block';
+    }
+    function ShowRadiations() {
+        AnalysesTBl.style.display = 'none';
+        RadiationsTBl.style.display = 'block';
+        DiagnosesTBl.style.display = 'none';
+    }
+    function ShowAnalyses() {
+        AnalysesTBl.style.display = 'block';
+        RadiationsTBl.style.display = 'none';
+        DiagnosesTBl.style.display = 'none';
+    }
+
+</script>
+

@@ -1,0 +1,815 @@
+/* Test classes */
+body
+{
+  /* box-sizing: border-box; */
+  overflow:hidden;
+   background: linear-gradient(1000deg,rgb(236, 236, 241),rgb(232, 232, 235)); 
+  /* background-color: white; */
+
+
+}
+*{
+  box-sizing: border-box;
+}
+
+/* -----------------------scroll bar style======================== */
+::-webkit-scrollbar {
+  width: 13px;
+  height: 10px;
+}
+
+/* Track */
+/*:-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #274781; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #274781; 
+}/* =========================end scroll bar style===================== */
+.grad{
+  background: linear-gradient(150deg,rgb(222, 227, 230),rgb(153, 173, 209));
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 1px 2px 8px #2b2b2c;
+  border-radius: 10px;
+  /* height: 200px; */
+}
+.grad1{
+  margin-top: 15px  !important;
+  margin-bottom: 25px !important;
+  box-shadow: 1px 2px 10px black;
+  border-radius: 10px;
+}
+.c {
+  /* border: 1px solid black; */
+  height: 150px;
+  margin: 15px;
+  box-sizing: border-box;
+ 
+  margin-left: 40px;
+  box-shadow: 1px 2px 10px black;
+}
+.c1 {
+  border: 1px solid black;
+  height: 500px;
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: 30px;
+}
+.sidePhotoBG{
+  /* background: linear-gradient(50deg,rgb(154, 144, 202),rgb(66, 66, 226)) */
+  /* background-color: rgb(9, 9, 68); */
+  /* background-color: white; */
+   background: linear-gradient(50deg,rgb(174, 173, 184),rgb(241, 241, 245)) 
+
+}
+.SidePhoto {
+    width: 130px;
+    margin: 30px auto;
+    margin-left: 50px;
+    border: gray 5px solid;
+}
+
+/* End test classes */
+/* statrt side nav */
+ .SideNav{
+  /* background: linear-gradient(50deg,rgb(24, 4, 114),rgb(13, 13, 224)); */
+   /* background-color:  rgb(9, 9, 68);*/
+   background-color:white;
+  
+} 
+
+
+.SideNav a {
+    padding: 8px 8px 8px 8px;
+  padding-left: 10px;
+    text-decoration: none;
+    font-size: 10px ;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-size: 18px;
+    border-radius:0 10px 10px 0;
+    margin-left: 2px;
+   
+    
+  }
+    .SideNav button {
+        padding: 8px 8px 8px 8px;
+        padding-left: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        font-size: 18px;
+        border-radius: 0 10px 10px 0;
+        margin-left: 2px;
+        background-color:none;
+        border:none;
+    }
+        .SideNav button:hover {
+            color: white;
+            border-left: 5px solid blue;
+            transition: 1s;
+            padding-left: 15px;
+            background-color: none;
+            border: none;
+            /* background-color: #448AFF; */
+            /* font-weight: bold; */
+        }
+   .SideNav a:hover {
+        color:white;
+        border-left: 5px solid blue;
+        transition: 1s;
+        padding-left: 15px;
+
+        /* background-color: #448AFF; */
+        /* font-weight: bold; */
+    }
+    .SideNav a:active {
+        color: white;
+        padding-left: 20px;
+    }
+        /* End side nav */
+        /* start top nav */
+.topNav {
+    background-color: darkslateblue;
+    /* box-shadow: 1px 2px 10px black;*/
+}
+ /* --------------------------------------------start doctor calender---------------------------- */
+.Wall{
+  position:relative;
+  border-radius: 10px;
+}
+.calendar{
+  /* position:absolute; */
+  margin:auto;
+  left:0; right:-10px; top:10px;
+  width:100%; height:250px;
+  background:white;
+  box-shadow: 1px 2px 10px black;
+  border-radius: 10px;
+}
+.frame{
+  /* position:relative; */
+  width:100%;
+  /* height:80px; */
+  background:#1e90ff;
+}
+.screw{
+  position:absolute;
+  width:10px; height:10px;
+  background-color:#bdc3c7;
+  /* border-radius:50px; */
+  top:15%;
+  box-shadow: inset 0px 0px 10px #2c3e50;
+  border: 1px solid #7f8c8d;
+}
+.left{
+  left: 15px;
+}
+.right{
+  right:15px;
+}
+.shine{
+  position:absolute;
+  background: rgba(255,255,255,0.2);
+  width: 30px; height:30px;
+  border-radius: 100%;
+  left:5px; top:5px;
+}
+.line{
+  position:absolute;
+  width:100%; height:3px;
+  background-color:#7f8c8d;
+  top:18px;
+  transform: rotate(180deg);
+}
+.rerotate{
+  transform: rotate(180deg);
+}
+.year{
+  position: absolute;
+  width:100%; height:100%;
+  text-align: center;
+  padding-left: 20px;
+  display: block;
+  color: rgb(184, 144, 144);
+}
+.year h1{ 
+
+  color:white;
+  font-size:20px;
+  margin:0; padding:0; 
+  line-height: 10px; 
+  /* padding-left: 50%; */
+  /* display: inline; */
+
+} 
+/* .content{ 
+  position:absolute;
+  width: 100%; height:78%;
+}  */
+.content h1{ 
+  /* text-align:center;  */
+  font-size: 70px;
+  /* margin:10px; padding:20px; */
+  /* line-height:5px; */
+  color: #0c2461;
+  display: block;
+  padding-left: 10px;
+
+}
+.content h2{
+  text-align:center;
+  font-size: 40px;
+  /* margin:0; padding:0;   */
+  /* line-height:10px; */
+  color: #0b4d5e;
+  display: block;
+
+  padding-top: 15px;
+
+}
+/* --------------------------------------------End doctor calender---------------------------- */
+*{
+  box-sizing: border-box;
+
+}
+/*--------------------------------------------- Start to do list  */
+
+.ToDo > ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+.ToDo ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size:14px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+.ToDo ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+.ToDo ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+.ToDo ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+.ToDo ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.ToDo > .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.ToDo .close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.ToDo .header {
+  background-color: #616bf0;
+  padding: 0;
+  color: rgb(4, 3, 58);
+  text-align: left;
+  border-radius: 2px;
+  
+}
+
+/* Clear floats after the header */
+.ToDo .header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+.ToDo input {
+  margin: 0;
+  border: none;
+  border-radius:0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.ToDo .addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.ToDo .addBtn:hover {
+  background-color: #bbb;
+}
+.TablePhoto {
+    width: 50px;
+    margin: auto;
+    /*border: gray 5px solid;*/
+}
+/*--------------------------------------------------- End to do list  */
+/* --------------------------------------------start Containers---------------------------- */
+.topLeftContainerName{
+  margin: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  font-size: 30px;
+  color: #240964;
+}
+/* --------------------------------------------End Containers---------------------------- */
+#DoctorsContainer{
+  margin-left: 0px;
+  margin-top: 25px; 
+   width: 100%;
+   display: none;
+   /* background: linear-gradient(1000deg,rgb(236, 236, 241),rgb(214, 214, 219)); */
+}
+#PatientsHistoryContainer{
+  margin-left: 0px;
+  margin-top: 25px; 
+   width: 100%;
+   display: none;
+
+}
+#PatientsHistoryContainer .card:hover ,#DoctorsContainer .card:hover{
+  cursor: pointer;
+}
+/* doctors styling */
+.doctorsCard{
+  width:100%;
+ /* border-radius: 15px;*/
+  /*box-shadow:  0px 0px 8px #2b2b2c;*/
+  background: white;
+  margin-bottom: 20px;
+}
+.patientCard{
+  width:100%;
+  border-radius: 15px;
+   box-shadow:  1px 2px 8px #2b2b2c;
+    background: linear-gradient(300deg,rgb(136, 132, 172),rgb(228, 228, 241));
+    margin-bottom: 20px;
+}
+.doctorsCardImg{
+  height: 150px ;
+  background:rgb(142, 153, 158); box-shadow: inset 0px 0px 10px #2b2b2c;
+  border-radius: 15px 15px 0 0;
+}
+.doctorsCardHr{
+background-color:rgb(228, 226, 226);
+margin-top:0px
+}
+/* End Doctors Styling */
+
+/* ---------------------------Appointment Table--------------------------------- */
+/*Search textbox*/
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    margin-left:20px
+}
+
+.CardPhoto{
+    height:130px;
+    margin:15px auto;
+    border:1px solid gray;
+    /*margin-left:15px;*/
+    border-radius:15px;
+   min-width:20%;
+ 
+}
+.CardPhotoPatients {
+    width: 100px;
+    margin: 30px auto;
+    /*margin-left: 80px;*/
+    border: navy 2px solid;
+    margin-bottom: 30px;
+} 
+
+.Appoint #myInput1 {
+    background-image: url('D:\MyITI\GHS project\GHS\search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 300px;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid rgb(0, 2, 20);
+    margin-bottom: 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(211, 204, 211);
+}
+
+.Appoint #myTable1 {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+  font-size: 16px;
+  background: rgb(245, 243, 243);
+  box-shadow: 10px 5px 8px black;
+  color: #2d3569;
+  font-weight: bold;
+}
+
+.Appoint #myTable1 th, #myTable1 td {
+  text-align: left;
+  padding: 3px;
+}
+
+.Appoint #myTable1 tr {
+  border-bottom: 1px solid rgb(188, 187, 189);
+}
+
+.Appoint #myTable1 tr.header {
+background: linear-gradient(150deg,rgb(170, 175, 177),rgb(208, 212, 212));
+padding: 30px;
+}
+.Appoint #myTable1 th{
+  padding: 10px;
+  color: #000000;
+}
+/* start prescription 2 table */
+.TblClass  {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+  font-size: 16px;
+  background: rgb(245, 243, 243);
+  box-shadow: 10px 5px 8px black;
+  color: #2d3569;
+  font-weight: bold;
+}
+
+.TblClass  th,  td {
+  text-align: left;
+  padding: 3px;
+}
+
+.TblClass  tr {
+  border-bottom: 1px solid rgb(188, 187, 189);
+}
+
+.TblClass  tr.header {
+background: linear-gradient(150deg,rgb(170, 175, 177),rgb(208, 212, 212));
+padding: 30px;
+}
+.TblClass  th{
+  padding: 10px;
+  color: #000000;
+}
+
+/* #myTable1 tr:hover{
+background: linear-gradient(150deg,rgb(3, 20, 27),rgb(240, 237, 245));
+transition: 0.3s;
+
+} */
+.tblBtn{
+  float: right;margin-right: 5PX;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  width: 40px;
+  border-radius:0 10px 0 10px ;
+}
+.btn-primary1{
+  background: linear-gradient(150deg,rgb(85, 158, 180),rgb(92, 195, 226));
+  box-shadow:  inset 1px 2px 8px #1d7ca8; 
+}
+/* start confirm delete message  */
+#confirm1 {
+  display:none;
+  background: linear-gradient(150deg,rgb(90, 117, 168),rgb(23, 103, 139));
+  color: #000000;
+  border: 1px solid #aaa;
+  position: fixed;
+  width: 320px;
+  height:auto;
+  left: 50%;
+  top:30%;
+  margin-left: -150px;
+  padding: 10px 20px 10px;
+  /* box-sizing: border-box; */
+  text-align: center;
+  border-radius:10px;
+  z-index: 1;
+  padding-top: 20px;
+  box-shadow: 1px 2px 8px #2b2b2c;
+
+}
+#confirm1 button {
+  background-color: #270cc5;
+  display: inline-block;
+  border-radius: 12px;
+  /* border: 4px solid rgb(170, 170, 170); */
+ 
+  text-align: center;
+  width: 60px;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+  border-radius: 0 10px 0 10px;
+}
+#confirm1 .message1 {
+  text-align: left;
+  color: rgb(229, 233, 233);
+  font-size:15px ;
+}
+#patientIdForm {
+  display:none;
+  color: #000000;
+  border: 1px solid #aaa;
+  position: fixed;
+  width: 400px;
+  height:auto;
+  left: 50%;
+  top:30%;
+  margin-left: -180px;
+  padding: 10px 20px 10px;
+  /* box-sizing: border-box; */
+  text-align: center;
+
+  z-index: 1;
+  padding-top: 20px;
+  background: linear-gradient(150deg,rgb(90, 117, 168),rgb(23, 103, 139));
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 1px 2px 8px #2b2b2c;
+  border-radius: 10px;
+}
+#patientIdForm button {
+  background-color: #270cc5;
+  display: inline-block;
+  border-radius: 12px;
+  /* border: 4px solid rgb(170, 170, 170); */
+  padding: 5px;
+  text-align: center;
+  width: 60px;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+  border-radius: 0 10px 0 10px;
+}
+#yes1{
+  background-color: rgb(161, 9, 9) !important;
+}
+#cancleId{
+ background-color: rgb(161, 9, 9) !important;
+}
+#patientIdForm .message2 {
+  text-align: left;
+  color: rgb(229, 233, 233);
+  font-size:20px ;
+}
+#txtPatientId{
+  padding: 5px;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+  margin-left: -2px;
+  background: rgb(177, 166, 175);
+ border-radius: 10px;
+ padding-left: 15px;
+}
+
+/* End confirm delete message  */
+/* blur body style */
+/* * :not(.unblur) {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);    
+} */
+
+/* -------------------------------start Patient Profile Shown By Doctor------------------------- */
+#PatientProfileShownByDoctor{
+  margin-left: 0px;
+  margin-top: 25px; 
+   width: 100%;
+   display: none;
+   
+}
+#PatientProfileShownByDoctor fieldset{
+  /* border: 1px solid black; */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f44336;
+  border-radius: 10px;
+background: linear-gradient(150deg,rgb(183, 198, 207),rgb(123, 145, 187));
+margin-top: 10px;
+margin-bottom: 25px;
+box-shadow: 1px 2px 8px #2b2b2c;
+border-radius: 5px;
+color: rgb(11, 11, 12);
+font-size: 15px;
+font-weight: bold;
+border: 2px solid black;
+}
+#PatientProfileShownByDoctor legend{
+background: linear-gradient(150deg,rgb(55, 38, 168),rgb(159, 167, 184));
+  border-radius: 4px;
+  color: darkblue;
+  font-size: 20px;
+  font-weight: bold;
+  width: auto;
+  margin-left: -5px;
+  box-shadow: 2px 2px 1px 1px rgb(12, 16, 58);
+}
+#PatientProfileShownByDoctor input[type='text'],input[type='tel'],input[type='Date']
+{
+  font-size: 15px;
+  font-weight: bold;
+}
+.patientPersonalDateheader{
+/* background: linear-gradient(1000deg,rgb(39, 24, 134),rgb(159, 167, 184)); */
+font-size: 20px;
+padding-left: 20px;
+/* margin-bottom: 10px; */
+color:#240964;
+padding: 5px;
+
+}
+.patientDiagnosesheader
+{
+  /* background: linear-gradient(150deg,rgb(28, 12, 133),rgb(159, 167, 184)); */
+font-size: 20px;
+padding-left: 20px;
+/* margin-bottom: 10px; */
+color:#240964;
+/* padding: 5px; */
+
+}
+#txtDeptSearch{
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+#btnAddNewDiagnose
+{
+  background-color: #0c5cc5;
+  border-radius: 12px;
+  /* border: 4px solid rgb(170, 170, 170); */
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  border-radius: 0 8px 0 8px;
+  float: right;
+width: 40px;
+  font-weight: bolder;
+}
+/*------------------------------------ start DiagnosesTBl -------------------- */
+
+#DiagnosesTBl {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+  font-size: 15px;
+  /* background: linear-gradient(150deg,rgb(222, 227, 230),rgb(153, 173, 209)); */
+  background-color: rgb(243, 239, 239);
+  box-shadow: 10px 5px 8px black;
+ color: #2d3569;
+ padding: 8px;
+ margin-top: 10px;
+}
+#DiagnosesTBl th{
+  color: #010413;
+
+}
+#DiagnosesTBl th, #DiagnosesTBl td {
+  text-align: left;
+
+}
+
+#DiagnosesTBl tr {
+  border-bottom: 1px solid rgb(5, 1, 56);
+  padding: 3px;
+}
+
+#DiagnosesTBl tr.header {
+  background: linear-gradient(150deg,rgb(170, 175, 177),rgb(208, 212, 212));
+padding: 18px;
+
+}
+#DiagnosesTBl th{
+  padding: 10px;
+}
+/*------------------------------------ End DiagnosesTBl -------------------- */
+/* ---------------------------------------- */
+.btnShowDiagonesDetails{
+  background-color: #0c5cc5;
+  border-radius: 12px;
+  /* border: 4px solid rgb(170, 170, 170); */
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  border-radius: 0 8px 0 8px;
+  float: right;
+width: 70px;
+margin: 5px;
+margin-bottom: 10px;
+  /* font-weight: bold; */
+}
+/* -------------------------------End Patient Profile Shown By Doctor------------------------- */
+/* --------------------------------start diagonse model----------------------------- */
+#dropSearch {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#dropSearch:focus {
+  outline: 3px solid #ddd;
+  }
+  
+  .dropdown {
+    
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    
+    /* position: absolute; */
+    background-color: #f6f6f6;
+    min-width: 260px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+/* ----------------------------------End Diagonse model----------------------------- */

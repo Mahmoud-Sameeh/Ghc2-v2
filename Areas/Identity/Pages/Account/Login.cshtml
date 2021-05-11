@@ -1,0 +1,281 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<style>
+
+
+
+    .tab {
+        overflow: hidden;
+        background-color: #0062CC;
+        width: 242px;
+        border-radius: 15px;
+    }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: #0062CC;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 4px;
+            transition: 0.3s;
+            font-size: 17px;
+            width: 80px;
+            color: white;
+            font-family: monospace;
+        }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                font-size: 20px;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+                background-color: white;
+                border-radius: 15px;
+                border: 1px solid #0062CC;
+                color: #0062CC;
+            }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 4px;
+        border: 1px solid white;
+        border-top: none;
+    }
+
+
+
+    #Admin {
+        background-color: white;
+        border-radius: 100px 220px 220px 30px;
+        border: 1px dotted dodgerblue;
+    }
+
+    #Doctor {
+        background-color: white;
+        border-radius: 100px 220px 220px 30px;
+        border: 1px dotted dodgerblue;
+    }
+
+    #Patient {
+        background-color: white;
+        border-radius: 100px 220px 220px 30px;
+        border: 1px dotted dodgerblue;
+    }
+
+    h3 {
+        color: #0062CC;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: inherit;
+        padding-top: 20px;
+        font-weight: bold;
+    }
+
+    #Patientimage {
+        border-radius: 20% 15%;
+        width: 100%;
+    }
+
+    #adminimage {
+        padding-top: 45px;
+        height: 300px;
+    }
+
+    #doctorimage {
+        padding-top: 20px;
+        border-radius: 20px;
+        width: 70%;
+    }
+
+    .cont {
+        background-color: #0062CC;
+        border: 1px double lightgrey;
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 48px 33px 220px 30px;
+        perspective: 500px;
+        width: 50%;
+        max-width: 70%;
+    }
+
+    .tablinks {
+        width: 33.33%;
+    }
+
+    .btnlogin {
+        background-color: #0062CC;
+        color: white;
+        font-family: monospace;
+    }
+</style>
+
+<div class="cont">
+    <div class="tab" style="width:100%">
+        <button class="tablinks " onclick="openForm(event, 'Admin')" style="width:33%" id="btn1">Admin</button>
+        <button class="tablinks " onclick="openForm(event, 'Doctor')" style="width:33%">Doctor</button>
+        <button class="tablinks " onclick="openForm(event, 'Patient')" style="width:33%">Patient</button>
+    </div>
+
+    <div id="Admin" class="tabcontent tab-content">
+        <!-- <h3 class="text-center">Admin</h3>
+        <br> -->
+        <div class="row">
+            <div class="col-4 text-center">
+                <img src="~/nermen/img/admin3.jpg" style="height:200px; width:100%;" id="adminimage">
+            </div>
+            <div class="col-8 ">
+                <h3 class="text-center">Admin</h3>
+                <form class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="username">UserName:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="username"asp-for="Input.UserName" placeholder="Enter username" >
+                            <input asp-for="Input.Role" style="display:none" value="Admin" class="form-control" />
+                            <input asp-for="Input.SSN" style="display:none" value="258741339" class="form-control" />
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pwd">Password:</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control"asp-for="Input.Password" id="pwd" placeholder="Enter password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="remember"> Remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-block  btnlogin ">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="Doctor" class="tabcontent">
+        <div class="row">
+            <div class="col-8">
+                <h3 class="text-center">Doctor</h3>
+                <form class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="username">UserName:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="username" asp-for="Input.UserName" placeholder="Enter username" >
+                            <input asp-for="Input.Role" style="display:none" value="Doctor" class="form-control" />
+                            <input asp-for="Input.SSN" style="display:none" value="258741339" class="form-control" />
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pwd">Password:</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="pwd" asp-for="Input.Password" placeholder="Enter password" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="remember"> Remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-block btnlogin">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <img src="~/nermen/img/doctor5.jpg" style="height: 250px;" id="doctorimage">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="Patient" class="tabcontent">
+
+        <div class="row">
+            <div class="col-5">
+                <img id="Patientimage" src="~/nermen/img/Patient.jpg" style="height:300px;">
+            </div>
+            <div class="col-7">
+                <h3 class="text-center">Patient</h3>
+                <form class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="SSN">SSN:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="SSN" asp-for="Input.SSN" placeholder="Enter SSN" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pwd">Password:</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control"  asp-for="Input.Password" id="pwd" placeholder="Enter password">
+                            <input asp-for="Input.Role" style="display:none" value="Patient" class="form-control" />
+                            <input asp-for="Input.UserName" style="display:none" value="258741339" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" id="patient" class="btn btn-block btnlogin">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+@*<form asp-route-returnUrl="@Model.ReturnUrl" method="post" />*@
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<script>
+    function openForm(evt, DivId) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(DivId).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    window.onload = function () {
+        var btn1;
+        btn1 = document.getElementById("btn1");
+        btn1.click();
+    }
+</script>

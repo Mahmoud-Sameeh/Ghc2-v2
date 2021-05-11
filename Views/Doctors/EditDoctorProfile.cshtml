@@ -1,0 +1,98 @@
+﻿@model Doctor 
+@{
+    ViewData["Title"] = "EditDoctorProfile";
+    Layout = "~/Views/Shared/_DocotrsLayout.cshtml";
+}
+
+
+<h4 style="color:gray;font-family:'Times New Roman'">My Profile</h4>
+<br />
+<form method="post" asp-action="EditDoctorProfile">
+    <div class="container bcontent">
+        <div class="card" style="width: 100%;margin:auto;border-top:4px solid gray">
+            <div class="row no-gutters">
+                <div class="col-md-2">
+                    <img class="card-img  rounded-circle CardPhotoPatients" style="margin-left:30%" src="@Url.Content( @Model.ImageUrl)" alt="Suresh Dasari Card">
+
+
+                </div>
+                <div class=" col-md-9 ml-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-2">
+                                    <input type="hidden" asp-for="@Model.Nid" value="@Model.Nid" />
+                                    <label for="name">Name</label>&nbsp;&nbsp;
+                                    <input asp-for="@Model.Name" type="text" class="form-control" placeholder="Patient Name" aria-label="Name" value="@Model.Name" readonly>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="Address">Degree:</label>&nbsp;&nbsp;
+                                    <input asp-for="@Model.Degree" type="text" class="form-control" placeholder="Degree" value="@Model.Degree" aria-label="Address" readonly>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="Address">Address:</label>&nbsp;&nbsp;
+                                    <input asp-for="@Model.Address" type="text" class="form-control" placeholder="Address" value="@Model.Address" aria-label="Address">
+                                </div>
+                                <div class="form-group mb-12">
+                                    <label for="email">Email</label>&nbsp;&nbsp;
+                                    <input asp-for="@Model.Email" type="text" class="form-control" placeholder="Email" aria-label="Email" value="@Model.Email">
+                                </div>
+
+
+
+                            </div>
+                            <div class=" col-md-6">
+                                <div class="form-group mb-2">
+                                    <label for="Birth Date">Birth Date</label>&nbsp;&nbsp;
+                                    <input asp-for="@Model.BitrhDate" type="text" class="form-control" placeholder="Birth Date" aria-label="Phone" value="@Model.BitrhDate.Value.Date.ToShortDateString()" readonly>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="Address">Speciality:</label>&nbsp;&nbsp;
+                                    <input asp-for="@Model.Specialty" type="text" class="form-control" placeholder="Speciality" value="@Model.Specialty" aria-label="Address" readonly>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="Phone">Phone</label>&nbsp;&nbsp;
+                                    <input asp-for="@Model.Phone" type="text" class="form-control" placeholder="Phone" aria-label="Phone" value="@Model.Phone">
+                                </div>
+
+                                <div class="form-group mb-2 mr-2 mt-5">
+
+                                    <div class="form-check">
+                                        <label for="Gender" class="mr-5">Gender:</label>
+                                        @{ if (Model.Gender.ToLower() == "male")
+                                            {<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Male
+                                                </label>
+                                            }
+                                            else
+                                            {
+
+                                                <input class="form-check-input ml-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked readonly>
+                                                <label class="form-check-label ml-4" for="flexRadioDefault1">
+                                                    Female
+                                                </label>
+                                            }
+                                        }
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="submit-section proceed-btn text-right mr-4">
+        <input type="submit" value="Save" class="btn btn-primary submit-btn" />
+        <a asp-action="GetDoctorProfile" asp-route-id="@Model.Nid" class="btn btn-outline-danger submit-btn">Cancel</a>
+
+    </div>
+
+</form>

@@ -1,0 +1,44 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        @if (this.User.IsInRole("Doctor"))
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-action="doctorindex" asp-controller="doctors" title="Manage"> @User.Identity.Name</a>
+            </li>
+        }
+        else if (this.User.IsInRole("Patient"))
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-action="GetPatientProfileReadonly" asp-controller="Patient" title="Manage"> @User.Identity.Name</a>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-action="Index" asp-controller="Admins" title="Manage"> @User.Identity.Name</a>
+            </li>
+        }
+
+        <li class="nav-item">
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Doctor">@localizer["Register"]</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">@localizer["Login"]</a>
+        </li>
+    }
+</ul>

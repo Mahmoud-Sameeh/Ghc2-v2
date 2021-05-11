@@ -1,0 +1,151 @@
+﻿@model AppointmentsList
+
+@{
+    ViewData["Title"] = "GetAppointment";
+    Layout = "~/Views/Shared/_Patient.cshtml";
+}
+<link href="~/CustomFolder/Patient.css" rel="stylesheet" />
+<script src="~/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+<br />
+
+<div class="container bcontent">
+    <div class="card" style="width: 90%;margin:auto ">
+        <div class="row no-gutters" style=" border-top: 2px solid #3498db;border-radius:5px">
+            <div class="col-md-2">
+                <input type="hidden" id="txtdocid" value="@Model.appointment.Doc.Nid" />
+                <img class="card-img  rounded-circle CardPhotoPatients" style="margin-left:30%" src="@Url.Content(@Model.appointment.Doc.ImageUrl)" alt="Suresh Dasari Card">
+            </div>
+            <div class="offset-1 col-md-9">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>@Model.appointment.Doc.Name</li>
+                                <li>@Model.appointment.Doc.BitrhDate.Value.ToShortDateString()</li>
+
+                                <li>@Model.appointment.Doc.Email</li>
+
+                            </ul>
+                        </div>
+                        <div class=" col-md-6">
+                            <ul>
+                                <li>@Model.appointment.Doc.Address</li>
+                                <li>@Model.appointment.Doc.Phone</li>
+                                <li>@Model.appointment.Doc.Gender</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="row">
+
+    <div class="col-12 col-sm-8 col-md-6 text-sm-left">
+        <div class="form-group mb-2 ">
+            <label for="date">Date:</label>&nbsp;&nbsp;
+            <input type="date" asp-for="@Model.appointment.AppointmetDateTime.Date" id="datecalender" />
+            @*<button class="btn small" id="button" data-date-format="yyyy-mm-dd"  data-date="2012-02-20">Your Date Picker</button>*@
+            <span asp-validation-for="@Model.appointment.AppointmetDateTime" class="text-danger"></span>
+        </div>
+    </div>
+</div>
+
+<div class="card booking-schedule schedule-widget">
+
+    <div class="schedule-header">
+        <div class="row">
+            <div class="col-md-12 ">
+
+            </div>
+        </div>
+    </div>
+    @*/Schedule Header*@
+    @*Schedule Content*@
+    @*<partial name="AvailableTime" />*@
+    <div id="partial">
+        @Html.Partial("AvailableTime", Model.dateTimes)
+    </div>
+</div>
+<br />
+@*<form method="post" data-ajax="true" data-ajax-method="post" id="frmGetAvialableTime" data-ajax-loading="#partial" data-ajax-url="/Doctors/GetAppointment">
+        <input type="hidden" name="id"  value="@Model.appointment.Doc.Nid"/><br>
+        <input type="hidden" name="date1" id="txtDate"/><br>
+    </form>*@
+
+
+@*/Schedule Widget
+    Submit Section*@
+<div class="submit-section proceed-btn text-right">
+    <button id="btnSaveAppoint" onclick="Saveappoint()" class="btn btn-primary submit-btn">Proceed to Book</button>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+<script>
+  
+    $("#datecalender").change(
+        function (dateText) {
+            var txtdocid = $('#txtdocid').val();
+            var datecalender = $('#datecalender').val();
+            console.log("Selected date: " + dateText + "; input's current value: " + this.value);
+
+            var data = { id: txtdocid, date1: datecalender };
+
+
+            $.ajax({
+                url: '@Url.Action("GetAppointmentAfter", "Patient")',
+                type: "post",
+                contentType: 'application/x-www-form-urlencoded',
+                data: data,
+                success: function (r) {
+
+                    //alert("kotb");
+                    //window.location.href = loaction.origin + "~/Doctors/Index"
+                    window.location.assign("/Patient/GetAppointment?id=" + txtdocid + "&&date1=" + datecalender)
+                },
+                    error: function() {
+                        alert("There was an error. Try again please!");
+                    }
+            });
+        }
+
+        //function () {
+        //    var datecalender = $('#datecalender').val();
+        //    $('txtDate').val(datecalender);
+        //    $('#frmGetAvialableTime').submit();}
+
+    );
+    var appointTime;
+    function setTime(time) {
+        appointTime = time;
+       // this.style.background = "green";
+        console.log(appointTime);
+    };
+    document.getElementById('btnSaveAppoint').onclick= function() {
+        console.log('hi');
+     
+        var txtdocid = $('#txtdocid').val();
+        var datecalender = $('#datecalender').val();
+        $.ajax({
+            url: '@Url.Action("SaveAppointRequest", "Patient")',
+            type: "post",
+            contentType: 'application/x-www-form-urlencoded',
+            data: { docid: txtdocid, AppointDateTime: datecalender + " " + appointTime },
+            success: function (r) {
+
+                alert("Your are succesfully reverse Apointment at ( " + datecalender +" "+ appointTime + " )     just wait to be accepted");
+                //window.location.href = loaction.origin + "~/Doctors/Index"
+                window.location.assign("/Patient/GetAppointment?id=" + txtdocid + "&&date1=" + datecalender)
+            },
+            error: function () {
+                alert("Error while try to Make appointment for you , try to make another one");
+            }
+        });
+    };
+</script>

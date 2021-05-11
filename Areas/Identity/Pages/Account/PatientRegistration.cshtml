@@ -1,0 +1,105 @@
+﻿@page
+@model GHC2.Areas.Identity.Pages.Account.PatientRegistrationModel
+@{ }
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Doctor</a></li>
+    <li><a data-toggle="tab" href="#menu1">Patient 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Admin </a></li>
+
+</ul>
+
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Create a new account.</h4>
+                    <hr />
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Input.Name"></label>
+                        <input asp-for="Input.Name" class="form-control" />
+                        <span asp-validation-for="Input.Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.UserName"></label>
+                        <input asp-for="Input.UserName" class="form-control" />
+                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Password"></label>
+                        <input asp-for="Input.Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword"></label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <hr />
+                    <br />
+
+                    <div class="form-group">
+                        <label asp-for="Input.SNN"></label>
+                        <input asp-for="Input.SNN" class="form-control" />
+                        <span asp-validation-for="Input.SNN" class="text-danger"></span>
+                    </div>
+                    <div class="form-group " colspan="2">
+                        <label asp-for="Input.Phone"></label>
+                        <input asp-for="Input.Phone" class="form-control" />
+                        <span asp-validation-for="Input.Phone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Email"></label>
+                        <input asp-for="Input.Email" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <hr />
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="Input.ImgUrl"></label>
+                        <input asp-for="Input.ImgUrl" class="form-control" />
+                        <span asp-validation-for="Input.ImgUrl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Gender"></label>
+                        <input asp-for="Input.Gender" class="form-control" />
+                        <span asp-validation-for="Input.Gender" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Address"></label>
+                        <input asp-for="Input.Address" class="form-control" />
+                        <span asp-validation-for="Input.Address" class="text-danger"></span>
+                    </div>
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Some content in menu 1.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <h3>Menu 2</h3>
+        <p>Some content in menu 2.</p>
+    </div>
+</div>
+<h1>Doctor Registration</h1>
+@*<form asp-route-returnUrl="@Model.ReturnUrl" method="post">*@
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
